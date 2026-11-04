@@ -1615,6 +1615,7 @@
   <p id="overlayMessage" style="font-size:16px; font-weight:600; margin-bottom:6px; color:#f8fafc;">Aktivitas tidak diizinkan terdeteksi!</p>
   <p style="font-size:14px; color:#94a3b8;">Pelanggaran: <strong id="overlayCount" style="color:#ffffff;">1</strong> / <span id="overlayMax">6</span></p>
   <p id="overlayInfoText" style="font-size:12.5px; color:#64748b; margin-top:12px;">Batas maksimal pelanggaran tercapai = ujian otomatis dikumpulkan paksa ke server</p>
+  <button type="button" id="btnReturnFullscreen" class="btn btn-primary" onclick="kembaliKeUjianDanFullscreen()" style="display:none; margin-top:16px; padding:10px 24px; font-weight:700; font-size:14px; border-radius:8px; cursor:pointer;">Kembali ke Layar Penuh</button>
 </div>
 
 <!-- Watermark Overlay (Anti-Foto HP / Anti-Leak) -->
@@ -1635,7 +1636,7 @@
     </div>
   </div>
   <div class="header-badges">
-    <span class="header-clock" id="headerClock"><svg class="svg-icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <span>Rab, 4 Nov 07.43</span></span>
+    <span class="header-clock" id="headerClock"><svg class="svg-icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <span>Rab, 4 Nov 11.22</span></span>
   </div>
 </header>
 
@@ -1905,7 +1906,7 @@
           </div>
           <div>
             <h3 style="font-size:15px; font-weight:800; color:var(--text-main); line-height:1.2;">CBT PROKTOR</h3>
-            <span class="badge badge-primary" id="versionBadge" style="font-size:10px; margin-top:2px;">v5.18</span>
+            <span class="badge badge-primary" id="versionBadge" style="font-size:10px; margin-top:2px;">v5.20</span>
           </div>
         </div>
 
@@ -2087,7 +2088,7 @@
       <td><strong>Informatika</strong></td>
       <td><span class="badge badge-primary" style="margin:2px 3px 2px 0;">X TAB 2</span></td>
       <td>2026-11-04</td>
-      <td class="font-mono text-xs">⏰ 10:15 s/d 11:30</td>
+      <td class="font-mono text-xs">⏰ 11:15 s/d 13:30</td>
       <td>
         <div class="btn-group-sm">
           <button class="btn btn-outline btn-xs" onclick="editJadwal(0)" title="Edit Jadwal">
@@ -2888,7 +2889,7 @@
                 <tbody id="bodyTabelSpreadsheet"><tr>
       <td class="font-mono text-muted text-center">1</td>
       <td><span class="badge badge-primary">X DKV 3</span></td>
-      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbwGBUlmmF1AK46STNc2_4qJT5vIC1Eri6LEtz_bvFPskuyLlmy0g6ZqmebcEAteAIF8/exec</td>
+      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbwn4IkV2SKg21i1-nWUVDFVSGcYRFkgKmlw3_Oy42jJSKJ5PMh-Ak_Yvz6_pENUF-CC/exec</td>
       <td>
         <div class="btn-group-sm">
           <button class="btn btn-outline btn-xs" onclick="salinSpreadsheetKelas(0)" title="Salin URL">
@@ -2911,7 +2912,7 @@
     </tr><tr>
       <td class="font-mono text-muted text-center">2</td>
       <td><span class="badge badge-primary">X TAB 1</span></td>
-      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbyIjzXTGco1pH9lnVllzBcswwXCw-i4pkOPxcAeRf_r3sQY2-gjquYE4TNHnw4SnjSX/exec</td>
+      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbym0vwAmK8Qynhttl1_hjaV5f9wHibddnZ4NDnT1gsk406GmvPCMBUZDwtxovEVU8Sz/exec</td>
       <td>
         <div class="btn-group-sm">
           <button class="btn btn-outline btn-xs" onclick="salinSpreadsheetKelas(1)" title="Salin URL">
@@ -2934,7 +2935,7 @@
     </tr><tr>
       <td class="font-mono text-muted text-center">3</td>
       <td><span class="badge badge-primary">XI DKV 1</span></td>
-      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbwiDXKXumto3xn-Zh5DGyC-4kB1IJ_g_M6LWFIeVpa2XTQmqAAHdMyE-KVwViwjL7k/exec</td>
+      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbzIUrTJPRkpA2l5RTHEgFoUXq8fsjRwL4W8iLwf3j0lo__nT6aHJAhvl9zt4p5yQW8/exec</td>
       <td>
         <div class="btn-group-sm">
           <button class="btn btn-outline btn-xs" onclick="salinSpreadsheetKelas(2)" title="Salin URL">
@@ -2957,7 +2958,7 @@
     </tr><tr>
       <td class="font-mono text-muted text-center">4</td>
       <td><span class="badge badge-primary">X DKV 1</span></td>
-      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbzMNwFvGwCRszlJbzwSk5Wt6ZUpKzqCwqrYRjVqK7pPn6evlE3-Z2C6wt-yVpy55w4/exec</td>
+      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbzuQqEdy0tqXKIm1tAIRhm4AJ-4GFxA4J2fAFS0nNiMSEJtc9eRfiyqQjj_hsUv-2w/exec</td>
       <td>
         <div class="btn-group-sm">
           <button class="btn btn-outline btn-xs" onclick="salinSpreadsheetKelas(3)" title="Salin URL">
@@ -2980,7 +2981,7 @@
     </tr><tr>
       <td class="font-mono text-muted text-center">5</td>
       <td><span class="badge badge-primary">X DKV 2</span></td>
-      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbwFLYSUmGRxgGid-ytinA7vR4MR3otIzTzBGXhz_XHRRP3uiMu2BuzFVj3oRxd8Hh4z/exec</td>
+      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbxdrrz2rmHzvaUZdTUzFZoVZBkNlbyEKANTms6DwN1ltPL895FHF9RfICDJLiW_mWM1/exec</td>
       <td>
         <div class="btn-group-sm">
           <button class="btn btn-outline btn-xs" onclick="salinSpreadsheetKelas(4)" title="Salin URL">
@@ -3003,7 +3004,7 @@
     </tr><tr>
       <td class="font-mono text-muted text-center">6</td>
       <td><span class="badge badge-primary">X TAB 2</span></td>
-      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbzppfj-L7brBM7A_jI-0qyFzwjfSUns0Wls_jyGD2iAOF8d4mGugAKW_MPJVa_sU13z/exec</td>
+      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbwfQe0-eahlXRumdphVV1Ki3cpGfjGjnkm0a7VYrUGVbBPtkP5kLoAMxv8ceNmJ-HJc/exec</td>
       <td>
         <div class="btn-group-sm">
           <button class="btn btn-outline btn-xs" onclick="salinSpreadsheetKelas(5)" title="Salin URL">
@@ -3026,7 +3027,7 @@
     </tr><tr>
       <td class="font-mono text-muted text-center">7</td>
       <td><span class="badge badge-primary">X TBSM 1</span></td>
-      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbzTheMtxT09QoYxVVtpRv8mVkO88ayvpMZHe7pbLbjNOWzsFNNg7vCREyCw4V5iiXM/exec</td>
+      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbw6pBpZ1Nvswn887GnS_h0CM2guMCgpg4syOjDVwiML7f8mWakAGUtZrquMlnPSMdU/exec</td>
       <td>
         <div class="btn-group-sm">
           <button class="btn btn-outline btn-xs" onclick="salinSpreadsheetKelas(6)" title="Salin URL">
@@ -3049,7 +3050,7 @@
     </tr><tr>
       <td class="font-mono text-muted text-center">8</td>
       <td><span class="badge badge-primary">X TBKR</span></td>
-      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbyQz4nWYb4-LQAa59C3CP2ImZLxDmaOVb8ix_oYsT3g_2np83GWPSe53_tmhSJ92A4/exec</td>
+      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbx4yc70brgagFjNwkjGfK2EQbTGNaSAMiUxCZtGqcy3QEFfh0Y3ZPNWRQZUWo9tzIA/exec</td>
       <td>
         <div class="btn-group-sm">
           <button class="btn btn-outline btn-xs" onclick="salinSpreadsheetKelas(7)" title="Salin URL">
@@ -3072,7 +3073,7 @@
     </tr><tr>
       <td class="font-mono text-muted text-center">9</td>
       <td><span class="badge badge-primary">XI DKV 3</span></td>
-      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbyy7B1kKTwuTQien1APZqmAzLGxUq-0-ddZpmuzuL6ICgT6E-bK4ERADIo6XW27dJA/exec</td>
+      <td style="word-break:break-all; font-size:12px; font-family:var(--font-mono);">https://script.google.com/macros/s/AKfycbxFS_R2zsVyuxUxzIrYcsIiOP2K8eKTum_QNP4cILLFLPpXGw5sIE_EMCLc9BHhXrQ/exec</td>
       <td>
         <div class="btn-group-sm">
           <button class="btn btn-outline btn-xs" onclick="salinSpreadsheetKelas(8)" title="Salin URL">
@@ -3107,10 +3108,26 @@
             <pre id="kodeGasText" style="background:var(--bg-subtle); color:var(--text-main); padding:16px; border-radius:var(--radius-md); border:1px solid var(--border); font-size:12px; font-family:var(--font-mono); overflow-x:auto; line-height:1.5;">function doPost(e) {
   var lock = LockService.getScriptLock();
   try {
-    lock.waitLock(15000);
-    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-    var data = JSON.parse(e.postData.contents);
+    lock.waitLock(15000); // Menunggu hingga 15 detik jika ada pengiriman bersamaan
 
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var timezone = "Asia/Jakarta";
+    try {
+      timezone = ss.getSpreadsheetTimeZone() || timezone;
+    } catch (tzErr) {}
+
+    // 1. Deteksi tanggal hari ini (format 'DD-MM-YYYY', contoh: 04-11-2026)
+    var todayStr = Utilities.formatDate(new Date(), timezone, "dd-MM-yyyy");
+
+    // 2. Cek apakah sheet dengan nama tanggal tersebut sudah ada
+    var sheet = ss.getSheetByName(todayStr);
+
+    // 3. Jika belum ada, buat sheet baru dengan nama tanggal tersebut
+    if (!sheet) {
+      sheet = ss.insertSheet(todayStr);
+    }
+
+    // 4. Jika sheet masih baru (baris kosong), otomatis buat baris Header
     if (sheet.getLastRow() == 0) {
       sheet.appendRow([
         "Timestamp",
@@ -3128,8 +3145,15 @@
         "Auto Submit",
         "Waktu Selesai"
       ]);
+      try {
+        sheet.getRange(1, 1, 1, 14).setFontWeight("bold");
+      } catch (fErr) {}
     }
 
+    // 5. Parse data JSON dari aplikasi CBT
+    var data = JSON.parse(e.postData.contents);
+
+    // 6. Cek &amp; blokir duplikasi data (Nama, Nomor Absen, Kelas, Mata Pelajaran)
     var lastRow = sheet.getLastRow();
     if (lastRow &gt; 1 &amp;&amp; data.nama &amp;&amp; data.kelas &amp;&amp; data.mataPelajaran &amp;&amp; data.nama !== "Uji Coba Sistem") {
       var range = sheet.getRange(2, 2, lastRow - 1, 4).getValues();
@@ -3145,13 +3169,17 @@
         var rowMapel = String(range[r][3] || '').trim().toLowerCase();
 
         if (rowNama === targetNama &amp;&amp; rowNomor === targetNomor &amp;&amp; rowKelas === targetKelas &amp;&amp; rowMapel === targetMapel) {
-          return ContentService.createTextOutput(JSON.stringify({result: "duplicate_skipped", message: "Data sudah tercatat"})).setMimeType(ContentService.MimeType.JSON);
+          return ContentService.createTextOutput(JSON.stringify({
+            result: "duplicate_skipped",
+            message: "Data sudah tercatat di sheet " + todayStr
+          })).setMimeType(ContentService.MimeType.JSON);
         }
       }
     }
 
+    // 7. Tambahkan baris data siswa ke sheet tanggal hari ini
     sheet.appendRow([
-      data.waktuSelesai || new Date().toLocaleString('id-ID'),
+      data.waktuSelesai || Utilities.formatDate(new Date(), timezone, "dd/MM/yyyy HH:mm:ss"),
       data.nama || "",
       data.nomor || "",
       data.kelas || "",
@@ -3168,12 +3196,26 @@
     ]);
 
     SpreadsheetApp.flush();
-    return ContentService.createTextOutput(JSON.stringify({result: "success"})).setMimeType(ContentService.MimeType.JSON);
+    return ContentService.createTextOutput(JSON.stringify({
+      result: "success",
+      sheet: todayStr
+    })).setMimeType(ContentService.MimeType.JSON);
+
   } catch(error) {
-    return ContentService.createTextOutput(JSON.stringify({result: "error", error: error.toString()})).setMimeType(ContentService.MimeType.JSON);
+    return ContentService.createTextOutput(JSON.stringify({
+      result: "error",
+      error: error.toString()
+    })).setMimeType(ContentService.MimeType.JSON);
   } finally {
     lock.releaseLock();
   }
+}
+
+function doGet(e) {
+  return ContentService.createTextOutput(JSON.stringify({
+    status: "active",
+    message: "Google Apps Script CBT Endpoint aktif dan siap menerima data."
+  })).setMimeType(ContentService.MimeType.JSON);
 }</pre>
           </div>
         </div>
@@ -3309,7 +3351,7 @@
                 <svg class="svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                 <span>Download HTML Terbaru</span>
               </button>
-              <span style="font-size:13.5px; color:var(--text-muted);">Versi Rilis Saat Ini: <strong id="currentVersionDisplay" style="color:var(--text-main); font-family:var(--font-mono);">v5.18</strong></span>
+              <span style="font-size:13.5px; color:var(--text-muted);">Versi Rilis Saat Ini: <strong id="currentVersionDisplay" style="color:var(--text-main); font-family:var(--font-mono);">v5.20</strong></span>
             </div>
             <div id="statusSimpanPermanen" style="margin-top:14px;"></div>
           </div>
@@ -3406,7 +3448,7 @@
         <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
-    <input type="hidden" id="editJadwalIndex" value="1">
+    <input type="hidden" id="editJadwalIndex" value="0">
     <div class="form-group">
       <label for="modalMapelJadwal">Mata Pelajaran:</label>
       <select id="modalMapelJadwal" class="form-control"><option value="SEMUA">-- Semua Mata Pelajaran --</option><option value="Informatika">Informatika</option><option value="Pendidikan Agama Islam">Pendidikan Agama Islam</option><option value="Produk Kreatif dan Kewirausahaan">Produk Kreatif dan Kewirausahaan</option></select>
@@ -3450,7 +3492,7 @@
       </label>
     
       <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-size:13px; color:var(--text-main); margin-bottom:0;">
-        <input type="checkbox" name="kelasJadwalItem" value="X TAB 2" onchange="onToggleItemKelas()" style="width:15px; height:15px; accent-color:var(--primary); cursor:pointer;">
+        <input type="checkbox" name="kelasJadwalItem" value="X TAB 2" checked="" onchange="onToggleItemKelas()" style="width:15px; height:15px; accent-color:var(--primary); cursor:pointer;">
         <span>X TAB 2</span>
       </label>
     
@@ -3460,7 +3502,7 @@
       </label>
     
       <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-size:13px; color:var(--text-main); margin-bottom:0;">
-        <input type="checkbox" name="kelasJadwalItem" value="X TBSM 1" checked="" onchange="onToggleItemKelas()" style="width:15px; height:15px; accent-color:var(--primary); cursor:pointer;">
+        <input type="checkbox" name="kelasJadwalItem" value="X TBSM 1" onchange="onToggleItemKelas()" style="width:15px; height:15px; accent-color:var(--primary); cursor:pointer;">
         <span>X TBSM 1</span>
       </label>
     
@@ -3538,12 +3580,12 @@
 <div class="modal" id="spreadsheetModal">
   <div class="modal-dialog">
     <div class="modal-header">
-      <h3 id="spreadsheetModalTitle">Link Spreadsheet Kelas</h3>
+      <h3 id="spreadsheetModalTitle"><svg class="svg-icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg> <span>Edit Link Spreadsheet Kelas</span></h3>
       <button class="toast-close" onclick="closeModal('spreadsheetModal')" aria-label="Close">
         <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
-    <input type="hidden" id="editSpreadsheetIndex" value="-1">
+    <input type="hidden" id="editSpreadsheetIndex" value="8">
     <div class="form-group">
       <label for="modalKelasSpreadsheet">Kelas:</label>
       <input type="text" id="modalKelasSpreadsheet" class="form-control" placeholder="Contoh: X DKV 1">
@@ -3699,11 +3741,11 @@ const STATUS_RESET_DEFAULT = false;
 const TAMPIL_JAWABAN_DEFAULT = false;
 const TAMPIL_PEMBAHASAN_DEFAULT = false;
 const DATA_SISWA_DEFAULT = [{"nama":"AN NISA KUSUMA MELATI","nomor":"1","kelas":"X DKV 1"},{"nama":"ANANDA MIFTAHULHUDA PRADANA","nomor":"2","kelas":"X DKV 1"},{"nama":"ANGEL LISA BEARNANDA","nomor":"3","kelas":"X DKV 1"},{"nama":"ARIF DAFFAA RIFQI PRATAMA","nomor":"4","kelas":"X DKV 1"},{"nama":"ARZELA TASYA ALNASYIFA","nomor":"5","kelas":"X DKV 1"},{"nama":"ATRESIA CANTIKA DEWI","nomor":"6","kelas":"X DKV 1"},{"nama":"AULIA IBRAHIM","nomor":"7","kelas":"X DKV 1"},{"nama":"AULIAH HAWA RAMADHANI","nomor":"8","kelas":"X DKV 1"},{"nama":"AVRIZHA KEYZHA ARZELLA","nomor":"9","kelas":"X DKV 1"},{"nama":"CALLISTA NINDIA PUTRI","nomor":"10","kelas":"X DKV 1"},{"nama":"CHOLIS ALI NAZAM","nomor":"11","kelas":"X DKV 1"},{"nama":"DINDA KEYLA WAHYUNINGTYAS","nomor":"12","kelas":"X DKV 1"},{"nama":"DISVITA PUTRI ANDINI","nomor":"13","kelas":"X DKV 1"},{"nama":"ELSA ESTU ROMA VELINA","nomor":"14","kelas":"X DKV 1"},{"nama":"FEBRIAN TIRTA ASSIDDIQ","nomor":"15","kelas":"X DKV 1"},{"nama":"GILANG YOGA PRASETYA","nomor":"16","kelas":"X DKV 1"},{"nama":"HAQKI NUR CAHYANTI","nomor":"17","kelas":"X DKV 1"},{"nama":"ITA UNZILA","nomor":"18","kelas":"X DKV 1"},{"nama":"KANAYA NISA SALSABILA","nomor":"19","kelas":"X DKV 1"},{"nama":"LAILL ATASSYA MARRORA","nomor":"20","kelas":"X DKV 1"},{"nama":"LATIVA OKTAVIA RULMANSYAH","nomor":"21","kelas":"X DKV 1"},{"nama":"MUHAMMAD TIRTA PRAMULYA","nomor":"22","kelas":"X DKV 1"},{"nama":"NAILA SALWA SALSABILA","nomor":"23","kelas":"X DKV 1"},{"nama":"NAUFAL AQIL KHAFI RAEYHAN","nomor":"24","kelas":"X DKV 1"},{"nama":"NISA AULIA MAHMUDAH","nomor":"25","kelas":"X DKV 1"},{"nama":"PRASASTI AGUSTINA MUSTIKAWATI","nomor":"26","kelas":"X DKV 1"},{"nama":"PRINCESSA NAFIAH ARIZAL","nomor":"27","kelas":"X DKV 1"},{"nama":"PUTRI ARBA'ATUN QUROTA AYUNI","nomor":"28","kelas":"X DKV 1"},{"nama":"RATNA ANGGUN EVINSYA LAILA PUTRI","nomor":"29","kelas":"X DKV 1"},{"nama":"REVA SALYA SOLINOV","nomor":"30","kelas":"X DKV 1"},{"nama":"REVI MARISKHA PUTRI","nomor":"31","kelas":"X DKV 1"},{"nama":"RODHIATUL HUSNNA","nomor":"32","kelas":"X DKV 1"},{"nama":"SAYYIDAH SHOFIAH","nomor":"33","kelas":"X DKV 1"},{"nama":"VANESA PRATAMA PUTRI","nomor":"34","kelas":"X DKV 1"},{"nama":"VANNESA DEVANIA","nomor":"35","kelas":"X DKV 1"},{"nama":"ZAHVIRA KHOLIFAH NURHIDAYAH","nomor":"36","kelas":"X DKV 1"},{"nama":"AFIF FACHRI WIBOWO","nomor":"1","kelas":"X DKV 2"},{"nama":"AMELIA PUTRI AYATUL HUSNA","nomor":"2","kelas":"X DKV 2"},{"nama":"AMELLIA","nomor":"3","kelas":"X DKV 2"},{"nama":"ANGGELLYCA PRASETYA","nomor":"4","kelas":"X DKV 2"},{"nama":"ANGGUN DWI YANI","nomor":"5","kelas":"X DKV 2"},{"nama":"AQELLA PUTRI KHOIRUN NISA","nomor":"6","kelas":"X DKV 2"},{"nama":"BIMA SAPUTRA","nomor":"7","kelas":"X DKV 2"},{"nama":"CHEYFFA AULIN HARYTASARI","nomor":"8","kelas":"X DKV 2"},{"nama":"CINTA REHALITA PUTRI RAGIL","nomor":"9","kelas":"X DKV 2"},{"nama":"DANIEQ DWI SUJIATI","nomor":"10","kelas":"X DKV 2"},{"nama":"DIANA NAZWA SYIFA","nomor":"11","kelas":"X DKV 2"},{"nama":"EDGAR BAYU ALDLY KUSUMA","nomor":"12","kelas":"X DKV 2"},{"nama":"FATHUR AJI MUBAROK","nomor":"13","kelas":"X DKV 2"},{"nama":"GISKA ANGGRAINI","nomor":"14","kelas":"X DKV 2"},{"nama":"ICHDA HAFISA","nomor":"15","kelas":"X DKV 2"},{"nama":"IMELDA AYU FITRI PITALOKA","nomor":"16","kelas":"X DKV 2"},{"nama":"INDAH BUDIARTI","nomor":"17","kelas":"X DKV 2"},{"nama":"INIS SEPTIAN AMELIA PUTRI","nomor":"18","kelas":"X DKV 2"},{"nama":"ISTIAZAH CALISTA WINDA PUTRI","nomor":"19","kelas":"X DKV 2"},{"nama":"KHARISMA BINTANG SYAFIRA","nomor":"20","kelas":"X DKV 2"},{"nama":"LUTHFI INAYATUL LAILI","nomor":"21","kelas":"X DKV 2"},{"nama":"MONIKA NUR AZIZAH","nomor":"22","kelas":"X DKV 2"},{"nama":"MUHAMMAD ZIDAN LATIF","nomor":"23","kelas":"X DKV 2"},{"nama":"NADIA NURUL FATIMAH","nomor":"24","kelas":"X DKV 2"},{"nama":"NICI NASELIA PUTRI ANGGRAENI","nomor":"25","kelas":"X DKV 2"},{"nama":"NIDIA TARIA PUTRI","nomor":"26","kelas":"X DKV 2"},{"nama":"NOVITA NUR ZARAH","nomor":"27","kelas":"X DKV 2"},{"nama":"REVI WISMA LANI","nomor":"28","kelas":"X DKV 2"},{"nama":"REYHAN KHAIRUL ZIHNI","nomor":"29","kelas":"X DKV 2"},{"nama":"SAFARUL DINIA","nomor":"30","kelas":"X DKV 2"},{"nama":"SALWA EKA NURJANAH","nomor":"31","kelas":"X DKV 2"},{"nama":"SELY RETNO WATI","nomor":"32","kelas":"X DKV 2"},{"nama":"SHERLY KUMALA DEWI","nomor":"33","kelas":"X DKV 2"},{"nama":"SINTIA NUR AINI","nomor":"34","kelas":"X DKV 2"},{"nama":"TESIS NUR HASNA","nomor":"35","kelas":"X DKV 2"},{"nama":"UNZILA BERLIANA NUR AINI","nomor":"36","kelas":"X DKV 2"},{"nama":"ADYTYA RIZKI RAMADHAN","nomor":"1","kelas":"X DKV 3"},{"nama":"AHMAD DIAS WIJAYA","nomor":"2","kelas":"X DKV 3"},{"nama":"ALLINCIA NATALI","nomor":"3","kelas":"X DKV 3"},{"nama":"ALYA PUTRI ANJANI","nomor":"4","kelas":"X DKV 3"},{"nama":"ANDINY ELSA PUTRY","nomor":"5","kelas":"X DKV 3"},{"nama":"ANNISA MUKHAROMAH","nomor":"6","kelas":"X DKV 3"},{"nama":"AUDREY MEUTIARA ODELIA FATYAN","nomor":"7","kelas":"X DKV 3"},{"nama":"AULIA SUAIBATHUL HAQIM","nomor":"8","kelas":"X DKV 3"},{"nama":"AURA NIRMALA NAZILA","nomor":"9","kelas":"X DKV 3"},{"nama":"AYU SITA LARASATI","nomor":"10","kelas":"X DKV 3"},{"nama":"CHANG LEVINDY OCTAVIA","nomor":"11","kelas":"X DKV 3"},{"nama":"DEWI LIA NUR FAIZAH","nomor":"12","kelas":"X DKV 3"},{"nama":"DIAN AYUK SUSILOWATI","nomor":"13","kelas":"X DKV 3"},{"nama":"ELIA RAYA SUNRISE","nomor":"14","kelas":"X DKV 3"},{"nama":"FELISYA PUTRI ARNAN DITA","nomor":"15","kelas":"X DKV 3"},{"nama":"HANAFI KHOYRUL ZAHRA","nomor":"16","kelas":"X DKV 3"},{"nama":"HANNY NURMALA","nomor":"17","kelas":"X DKV 3"},{"nama":"KHONSAU SHOLIHAH","nomor":"18","kelas":"X DKV 3"},{"nama":"KUNCORO DEWA","nomor":"19","kelas":"X DKV 3"},{"nama":"LENI OKTA WULAN DARI","nomor":"20","kelas":"X DKV 3"},{"nama":"MEISYA ARDHANIA PUTRI","nomor":"21","kelas":"X DKV 3"},{"nama":"MELANI EKA ARNI SAFITRI","nomor":"22","kelas":"X DKV 3"},{"nama":"MUHAMMAD FAUZAN NUR SYAKIB","nomor":"23","kelas":"X DKV 3"},{"nama":"MUHAMMAD REIHAN","nomor":"24","kelas":"X DKV 3"},{"nama":"NAYSA PUTRI PUSPITASARI","nomor":"25","kelas":"X DKV 3"},{"nama":"RAHMA DANI SEPTIANA","nomor":"26","kelas":"X DKV 3"},{"nama":"RENI AYU PERMATA SARI","nomor":"27","kelas":"X DKV 3"},{"nama":"RIRIN APRILLLIANTI SASKIA","nomor":"28","kelas":"X DKV 3"},{"nama":"SAFHA ALLIYA TURROHMAH","nomor":"29","kelas":"X DKV 3"},{"nama":"SAFINA DWI MURNI NURANJANI","nomor":"30","kelas":"X DKV 3"},{"nama":"SELLA NUR OKTAFIANA","nomor":"31","kelas":"X DKV 3"},{"nama":"SILVIA MAWARDHANI","nomor":"32","kelas":"X DKV 3"},{"nama":"SILVIA YAHYA RAMADHANI","nomor":"33","kelas":"X DKV 3"},{"nama":"STYFANI SABILA KHOIRIYAH","nomor":"34","kelas":"X DKV 3"},{"nama":"VICKY KURNIA ARDIANSYAH","nomor":"35","kelas":"X DKV 3"},{"nama":"ADITIYA EKA SAPUTRA","nomor":"1","kelas":"X TAB 1"},{"nama":"AFRIAN NUR MUSTOVA","nomor":"2","kelas":"X TAB 1"},{"nama":"AKBAR MAULANA IBRAHIM","nomor":"3","kelas":"X TAB 1"},{"nama":"ARDYANTAMA SETYOBUDI","nomor":"4","kelas":"X TAB 1"},{"nama":"AYMICHO FAHMI YURANO","nomor":"5","kelas":"X TAB 1"},{"nama":"AZZAHRA KANAYA JULI RAHMAWATI","nomor":"6","kelas":"X TAB 1"},{"nama":"BINTANG ALFISYAHRIN","nomor":"7","kelas":"X TAB 1"},{"nama":"DELVIN ZULFIAN AMADZYAH","nomor":"8","kelas":"X TAB 1"},{"nama":"DICKY FEBIAN TRIWINANDA","nomor":"9","kelas":"X TAB 1"},{"nama":"DICKY SETIAWAN","nomor":"10","kelas":"X TAB 1"},{"nama":"ELVIN MUHAMMAD AGIL SAPUTRA","nomor":"11","kelas":"X TAB 1"},{"nama":"EXCEL BEVERLEY ALFA PANGENDA","nomor":"12","kelas":"X TAB 1"},{"nama":"FADLAL ABI NAZARO","nomor":"13","kelas":"X TAB 1"},{"nama":"FAREL IBNU HANAFI","nomor":"14","kelas":"X TAB 1"},{"nama":"FERNANDO WAHYU SAPUTRA","nomor":"15","kelas":"X TAB 1"},{"nama":"GALANG EKA SETYAWAN","nomor":"16","kelas":"X TAB 1"},{"nama":"HANAFI HIDAYATULLOH","nomor":"17","kelas":"X TAB 1"},{"nama":"KHAIRUL DANANG SAPUTRA","nomor":"18","kelas":"X TAB 1"},{"nama":"KHOIRUL UMAM","nomor":"19","kelas":"X TAB 1"},{"nama":"KUMARA YUANINDYA ARDHANI","nomor":"20","kelas":"X TAB 1"},{"nama":"LATIF SAPUTRA ARDIANSYAH","nomor":"21","kelas":"X TAB 1"},{"nama":"LEONARD RUSLAN HARTAWAN","nomor":"22","kelas":"X TAB 1"},{"nama":"MUHAMAD ALVIN KURNIAWAN","nomor":"23","kelas":"X TAB 1"},{"nama":"MUHAMMAD DAMAR KUMOLOJATI","nomor":"24","kelas":"X TAB 1"},{"nama":"MUHAMMAD FIKRI ARDIYANSYAH","nomor":"25","kelas":"X TAB 1"},{"nama":"NABILA FAWAZI MAHARANI","nomor":"26","kelas":"X TAB 1"},{"nama":"NASIR JANGKUNG NUGROHO","nomor":"27","kelas":"X TAB 1"},{"nama":"NAZRIEL ILHMA RAMADHAN","nomor":"28","kelas":"X TAB 1"},{"nama":"NUHA AL FIRDAUS","nomor":"29","kelas":"X TAB 1"},{"nama":"RAFHA FAHRIZKY","nomor":"30","kelas":"X TAB 1"},{"nama":"REZA AMELIA KANA","nomor":"31","kelas":"X TAB 1"},{"nama":"REZA OCTA WIJAYA","nomor":"32","kelas":"X TAB 1"},{"nama":"RIZKY PRATAMA SETYA ADHI","nomor":"33","kelas":"X TAB 1"},{"nama":"ROHIM SURO KUMOLO","nomor":"34","kelas":"X TAB 1"},{"nama":"RYAN SYAHPUTRA","nomor":"35","kelas":"X TAB 1"},{"nama":"SATRIA NUGRAHA","nomor":"36","kelas":"X TAB 1"},{"nama":"ADI NUGROHO","nomor":"1","kelas":"X TAB 2"},{"nama":"AHMAD HAKIM FIRDAUS","nomor":"2","kelas":"X TAB 2"},{"nama":"ALEXA ARKABYAN","nomor":"3","kelas":"X TAB 2"},{"nama":"ALVIANO KEISHA PRATAMA","nomor":"4","kelas":"X TAB 2"},{"nama":"ALVIN PUTRA WIDIANSYAH","nomor":"5","kelas":"X TAB 2"},{"nama":"ALVINO GILANG YULIYANTO","nomor":"6","kelas":"X TAB 2"},{"nama":"ANDHIKA","nomor":"7","kelas":"X TAB 2"},{"nama":"ANGGA SAPUTRO","nomor":"8","kelas":"X TAB 2"},{"nama":"ARKANANTA","nomor":"9","kelas":"X TAB 2"},{"nama":"CHIKO AMELIO","nomor":"10","kelas":"X TAB 2"},{"nama":"DAMAR DEMADA","nomor":"11","kelas":"X TAB 2"},{"nama":"DAVIAN VANDEZTA FUAD","nomor":"12","kelas":"X TAB 2"},{"nama":"DIRLY ADITYA SAPUTRA","nomor":"13","kelas":"X TAB 2"},{"nama":"EDGAR NAUFAL CHESTARAFIF","nomor":"14","kelas":"X TAB 2"},{"nama":"ERICK MORALES","nomor":"15","kelas":"X TAB 2"},{"nama":"FAUZI HAFIDZ","nomor":"16","kelas":"X TAB 2"},{"nama":"GEOVANNY PRASTYO","nomor":"17","kelas":"X TAB 2"},{"nama":"HASSAN NURWI HUDA","nomor":"18","kelas":"X TAB 2"},{"nama":"KHANSA NAUFAL JULIANO","nomor":"19","kelas":"X TAB 2"},{"nama":"LENATAN ZIQRI MAULANA","nomor":"20","kelas":"X TAB 2"},{"nama":"MIKO WILIANTORO","nomor":"21","kelas":"X TAB 2"},{"nama":"MUHAMMAD KHOIRUL ANAM","nomor":"22","kelas":"X TAB 2"},{"nama":"NOAH ADILIA PRATAMA","nomor":"23","kelas":"X TAB 2"},{"nama":"PURNAMA ARDIAN PRATAMA","nomor":"24","kelas":"X TAB 2"},{"nama":"RAFA ADITYA YAHYA","nomor":"25","kelas":"X TAB 2"},{"nama":"RAFI AHMAD MUSTHOFA","nomor":"26","kelas":"X TAB 2"},{"nama":"REYNARD NOHAN ARDIRIANTO","nomor":"27","kelas":"X TAB 2"},{"nama":"REZHA SETYO NUGROHO","nomor":"28","kelas":"X TAB 2"},{"nama":"RIZKI NUGROHO","nomor":"29","kelas":"X TAB 2"},{"nama":"RIZKY AL MUZAKI MUSTHOFA","nomor":"30","kelas":"X TAB 2"},{"nama":"ROHMAT WAHYU SAPUTRO","nomor":"31","kelas":"X TAB 2"},{"nama":"UMAR AL FARUQ","nomor":"32","kelas":"X TAB 2"},{"nama":"VAZHEL QAUZAN DEVIZCHAR","nomor":"33","kelas":"X TAB 2"},{"nama":"WILDAN AZZAM HANIF","nomor":"34","kelas":"X TAB 2"},{"nama":"WONGALICK G'ANDREW HERJUNO","nomor":"35","kelas":"X TAB 2"},{"nama":"YANUAR FIERMANSYAH","nomor":"36","kelas":"X TAB 2"},{"nama":"AHMAD HABIBI HOSAIN","nomor":"1","kelas":"X TBSM 1"},{"nama":"ALAN DWI RIZKY","nomor":"2","kelas":"X TBSM 1"},{"nama":"ALFIANO MARVEL SAPUTRA","nomor":"3","kelas":"X TBSM 1"},{"nama":"ALIF TEGAR AL AZZAM","nomor":"4","kelas":"X TBSM 1"},{"nama":"ALVIAN RIDHO MAULANA","nomor":"5","kelas":"X TBSM 1"},{"nama":"ARLISA EKA PUTRI","nomor":"6","kelas":"X TBSM 1"},{"nama":"ARSHAND AFNANDA HUTOMO","nomor":"7","kelas":"X TBSM 1"},{"nama":"BANGKIT SAKTIAWAN","nomor":"8","kelas":"X TBSM 1"},{"nama":"BAYU WARDANI","nomor":"9","kelas":"X TBSM 1"},{"nama":"BRIAN LANA SYAHPUTRA","nomor":"10","kelas":"X TBSM 1"},{"nama":"BRILIANT FADLAN YASHIR","nomor":"11","kelas":"X TBSM 1"},{"nama":"CHANDRA LIE WIJAYA","nomor":"12","kelas":"X TBSM 1"},{"nama":"CHELSEA ARTIKA QORI SANYARIVA","nomor":"13","kelas":"X TBSM 1"},{"nama":"DEOFAN SATRYAALDIANSYAH","nomor":"14","kelas":"X TBSM 1"},{"nama":"DEVI PRAMESTI","nomor":"15","kelas":"X TBSM 1"},{"nama":"FAHREZA ILHAM PUTRA","nomor":"16","kelas":"X TBSM 1"},{"nama":"FAIS ANGGA ROMADHONI","nomor":"17","kelas":"X TBSM 1"},{"nama":"FELLIN TRISNANING TIYAS","nomor":"18","kelas":"X TBSM 1"},{"nama":"GIDEON ANATH CRISTIAN","nomor":"19","kelas":"X TBSM 1"},{"nama":"HARIYANTO","nomor":"20","kelas":"X TBSM 1"},{"nama":"IMRON JAMALUDIN","nomor":"21","kelas":"X TBSM 1"},{"nama":"INTAN PRATIWI","nomor":"22","kelas":"X TBSM 1"},{"nama":"LUTFHI PRATAMA PUTRA SUHARTO","nomor":"23","kelas":"X TBSM 1"},{"nama":"MUHAMMAD ADIIB WIDYOKO","nomor":"24","kelas":"X TBSM 1"},{"nama":"MUHAMMAD KHOIRUL ANAM","nomor":"25","kelas":"X TBSM 1"},{"nama":"MUHAMMAD RAFA PUTRA HANANTA","nomor":"26","kelas":"X TBSM 1"},{"nama":"MUHAMMAD RAFA SEPTYAWAN","nomor":"27","kelas":"X TBSM 1"},{"nama":"MUKTI WIDODO","nomor":"28","kelas":"X TBSM 1"},{"nama":"NADITO FADILAH HUTOMO","nomor":"29","kelas":"X TBSM 1"},{"nama":"NOVITA ANJEL LINA PUTRI","nomor":"30","kelas":"X TBSM 1"},{"nama":"PRATAMA NAZILA QURANIAWAN","nomor":"31","kelas":"X TBSM 1"},{"nama":"PUJO NUGROHO","nomor":"32","kelas":"X TBSM 1"},{"nama":"RAFI AL AZIIZ","nomor":"33","kelas":"X TBSM 1"},{"nama":"REZKY TRIYOGA PAMUNGKAS","nomor":"34","kelas":"X TBSM 1"},{"nama":"RHIDWAN ADYTIA NUR MUSTAKHIM","nomor":"35","kelas":"X TBSM 1"},{"nama":"YUSUF","nomor":"36","kelas":"X TBSM 1"},{"nama":"ABIYYI AHMAD KHOIRI","nomor":"1","kelas":"X TBKR"},{"nama":"ADITYA PRASETIAWAN","nomor":"2","kelas":"X TBKR"},{"nama":"AFIF ALI PRADANA","nomor":"3","kelas":"X TBKR"},{"nama":"ALDO WAHYU ARDYANSYAH","nomor":"4","kelas":"X TBKR"},{"nama":"ALVIN WAHYU HARIYANTO","nomor":"5","kelas":"X TBKR"},{"nama":"ANANDA GHANY EL-RASYID","nomor":"6","kelas":"X TBKR"},{"nama":"BAGUS BUDIARTO","nomor":"7","kelas":"X TBKR"},{"nama":"BAGUS PUTRA PAMUNGKAS","nomor":"8","kelas":"X TBKR"},{"nama":"DESTA BAYU SAPUTRO","nomor":"9","kelas":"X TBKR"},{"nama":"DIDIN VIA PRATAMA","nomor":"10","kelas":"X TBKR"},{"nama":"DIMAS ANANDA JADI PRASETYO","nomor":"11","kelas":"X TBKR"},{"nama":"FARHAN KURNIAWAN","nomor":"12","kelas":"X TBKR"},{"nama":"FARISA ARDIYANSHA","nomor":"13","kelas":"X TBKR"},{"nama":"FERDYAN AHMAD SYAIFUL MAULANA","nomor":"14","kelas":"X TBKR"},{"nama":"GEMPAR PANGESTU","nomor":"15","kelas":"X TBKR"},{"nama":"HAFIDZ LUTHFIYYAH PRAMUGI","nomor":"16","kelas":"X TBKR"},{"nama":"ISHAK AHMAD JUNAIDI","nomor":"17","kelas":"X TBKR"},{"nama":"JALU AIRLANGGA","nomor":"18","kelas":"X TBKR"},{"nama":"KINAN ADITYA RAMADHAN","nomor":"19","kelas":"X TBKR"},{"nama":"MARCEL GUNTUR SAPUTRA","nomor":"20","kelas":"X TBKR"},{"nama":"MUHAMAD ALFINNO PRATAMA","nomor":"21","kelas":"X TBKR"},{"nama":"MUHAMMAD DENI SAPUTRA","nomor":"22","kelas":"X TBKR"},{"nama":"MUHAMMAD FATKHUR ROHMAN","nomor":"23","kelas":"X TBKR"},{"nama":"NEVAN FABIAN ARDHANI","nomor":"24","kelas":"X TBKR"},{"nama":"NIZAM MUSTOFA","nomor":"25","kelas":"X TBKR"},{"nama":"RAFA ARDINO PRATAMA","nomor":"26","kelas":"X TBKR"},{"nama":"RAFHA ALFIANO MARGANA","nomor":"27","kelas":"X TBKR"},{"nama":"RAJENDRA VAUREL SULTON AULIA SADEWA","nomor":"28","kelas":"X TBKR"},{"nama":"RAVY MIFTAKHUL KHASAN SAYFUL JIHAN","nomor":"29","kelas":"X TBKR"},{"nama":"ROJER ANUGRAH DWI ADITIYA","nomor":"30","kelas":"X TBKR"},{"nama":"SAFIK ROHIDAN","nomor":"31","kelas":"X TBKR"},{"nama":"TEGAR ADITYA PRAYOGA","nomor":"32","kelas":"X TBKR"},{"nama":"WAHED BUDIANTO","nomor":"33","kelas":"X TBKR"},{"nama":"YUDHA AZAM ERYANTO","nomor":"34","kelas":"X TBKR"},{"nama":"ADILA RIFTI RAHAYU","nomor":"1","kelas":"XI DKV 1"},{"nama":"AISYAH NURUL QOMARIYAH","nomor":"2","kelas":"XI DKV 1"},{"nama":"APRILIA","nomor":"3","kelas":"XI DKV 1"},{"nama":"AVIN AULIA OKTAVIA","nomor":"4","kelas":"XI DKV 1"},{"nama":"AYRA SUCI RAMADANI","nomor":"5","kelas":"XI DKV 1"},{"nama":"BIMA ADI TAMA","nomor":"6","kelas":"XI DKV 1"},{"nama":"ELSA SALSABILA","nomor":"7","kelas":"XI DKV 1"},{"nama":"FATIN SEPTI RAHAYU","nomor":"8","kelas":"XI DKV 1"},{"nama":"FINAKA PUTRI ZAALIKA","nomor":"9","kelas":"XI DKV 1"},{"nama":"FISTANIA ALFARISZA","nomor":"10","kelas":"XI DKV 1"},{"nama":"HANIFAH LUTFI ISTIQOMAH","nomor":"11","kelas":"XI DKV 1"},{"nama":"KALISTA EFELINA KAIRANI","nomor":"12","kelas":"XI DKV 1"},{"nama":"KHEYZA BUNGA ARUNNA","nomor":"13","kelas":"XI DKV 1"},{"nama":"MICHELLE NAOMIRA ABIGAIL","nomor":"14","kelas":"XI DKV 1"},{"nama":"MUHAMAD IRSYAD","nomor":"15","kelas":"XI DKV 1"},{"nama":"MUHAMMAD RAFIF AL HAFIDZ","nomor":"16","kelas":"XI DKV 1"},{"nama":"NADIN DISTA RISMA","nomor":"17","kelas":"XI DKV 1"},{"nama":"NATASYA PUTRI APRILIA","nomor":"18","kelas":"XI DKV 1"},{"nama":"NATHASYIA YULIANA PUTRI","nomor":"19","kelas":"XI DKV 1"},{"nama":"OCTAVIA MARA KUSUMA DEWI","nomor":"20","kelas":"XI DKV 1"},{"nama":"OKTAVIA APRATSYIN MAYSYAROH","nomor":"21","kelas":"XI DKV 1"},{"nama":"PUAN MAHARANI PUTRI","nomor":"22","kelas":"XI DKV 1"},{"nama":"PUPUT MUTHMAINNAH","nomor":"23","kelas":"XI DKV 1"},{"nama":"RAYA DINAR APRILIA","nomor":"24","kelas":"XI DKV 1"},{"nama":"RIZA DWI SAPUTRI","nomor":"25","kelas":"XI DKV 1"},{"nama":"SARILA DWI PRAPTIWI","nomor":"26","kelas":"XI DKV 1"},{"nama":"SILVIA ANGGRAINI","nomor":"27","kelas":"XI DKV 1"},{"nama":"TIARA RIDHA OKTAVIA","nomor":"28","kelas":"XI DKV 1"},{"nama":"TIFATUL MARLINA","nomor":"29","kelas":"XI DKV 1"},{"nama":"UMI NURJANNAH","nomor":"30","kelas":"XI DKV 1"},{"nama":"VIANIKHA DYAHESTU WARDHANY","nomor":"31","kelas":"XI DKV 1"},{"nama":"WAHYUNI NUR AINI","nomor":"32","kelas":"XI DKV 1"},{"nama":"WILDAN PUTRA PRAYOGA","nomor":"33","kelas":"XI DKV 1"},{"nama":"YULIA ASTUTI RUKMANA","nomor":"34","kelas":"XI DKV 1"},{"nama":"ZIVILIA AUREL FADHILA","nomor":"35","kelas":"XI DKV 1"},{"nama":"ABEL CLAUDYA","nomor":"1","kelas":"XI DKV 3"},{"nama":"ASRI NUR KHASANAH","nomor":"2","kelas":"XI DKV 3"},{"nama":"AULIA DWI NOVYANTI","nomor":"3","kelas":"XI DKV 3"},{"nama":"AULIA NASHWA","nomor":"4","kelas":"XI DKV 3"},{"nama":"AVRILIANI","nomor":"5","kelas":"XI DKV 3"},{"nama":"AZIDA AULIA","nomor":"6","kelas":"XI DKV 3"},{"nama":"DEVIAN RAMADHANI","nomor":"7","kelas":"XI DKV 3"},{"nama":"DEVITA AWLIYAWURI RAMADANI","nomor":"8","kelas":"XI DKV 3"},{"nama":"DWI AGUSTINNA","nomor":"9","kelas":"XI DKV 3"},{"nama":"FERDI TOBI ARIYANTO","nomor":"10","kelas":"XI DKV 3"},{"nama":"HABZAH OKTAVIA DEWI ZAHRANI","nomor":"11","kelas":"XI DKV 3"},{"nama":"HEPPY ROHMATUL HIDAYAH","nomor":"12","kelas":"XI DKV 3"},{"nama":"INDAH BUNGA LESTARI","nomor":"13","kelas":"XI DKV 3"},{"nama":"ISNAINI DEWI LESTARI","nomor":"14","kelas":"XI DKV 3"},{"nama":"JELITA ZAHRANI PRATAMA","nomor":"15","kelas":"XI DKV 3"},{"nama":"LINTANG PUTRI PASHA","nomor":"16","kelas":"XI DKV 3"},{"nama":"MARSHA RAGIL PRATIWI","nomor":"17","kelas":"XI DKV 3"},{"nama":"MELISA ANESA PUTRI","nomor":"18","kelas":"XI DKV 3"},{"nama":"METTALEA PUTRI","nomor":"19","kelas":"XI DKV 3"},{"nama":"MIFTHA PUTRI WARDANI","nomor":"20","kelas":"XI DKV 3"},{"nama":"NOVITA CYNTIA LARASWATI","nomor":"21","kelas":"XI DKV 3"},{"nama":"OLIVIA KARIN DWI VANTOMI","nomor":"22","kelas":"XI DKV 3"},{"nama":"PIPIT TANIA RAHMAT DANI","nomor":"23","kelas":"XI DKV 3"},{"nama":"RAHMAN AKAL LISAN","nomor":"24","kelas":"XI DKV 3"},{"nama":"RESKI EVI DARYANTI","nomor":"25","kelas":"XI DKV 3"},{"nama":"RICHARD DJUAN PRASETYO MANAO","nomor":"26","kelas":"XI DKV 3"},{"nama":"SALMA NUR KHASANAH","nomor":"27","kelas":"XI DKV 3"},{"nama":"SEKAR ARUM","nomor":"28","kelas":"XI DKV 3"},{"nama":"SENTA REGINA ARILIANI","nomor":"29","kelas":"XI DKV 3"},{"nama":"SHOLEHAN NUR IMAN","nomor":"30","kelas":"XI DKV 3"},{"nama":"SILFINA DAMAYANTI","nomor":"31","kelas":"XI DKV 3"},{"nama":"TIARA KALYANA TANTRI","nomor":"32","kelas":"XI DKV 3"},{"nama":"TIARA NAFA WIJAYANTI","nomor":"33","kelas":"XI DKV 3"},{"nama":"WANDA EKA FARININGSIH","nomor":"34","kelas":"XI DKV 3"},{"nama":"YUNITA ZASKYA ADYAMECA","nomor":"35","kelas":"XI DKV 3"}];
-const SPREADSHEET_MAP_DEFAULT = [{"kelas":"X DKV 3","url":"https://script.google.com/macros/s/AKfycbwGBUlmmF1AK46STNc2_4qJT5vIC1Eri6LEtz_bvFPskuyLlmy0g6ZqmebcEAteAIF8/exec"},{"kelas":"X TAB 1","url":"https://script.google.com/macros/s/AKfycbyIjzXTGco1pH9lnVllzBcswwXCw-i4pkOPxcAeRf_r3sQY2-gjquYE4TNHnw4SnjSX/exec"},{"kelas":"XI DKV 1","url":"https://script.google.com/macros/s/AKfycbwiDXKXumto3xn-Zh5DGyC-4kB1IJ_g_M6LWFIeVpa2XTQmqAAHdMyE-KVwViwjL7k/exec"},{"kelas":"X DKV 1","url":"https://script.google.com/macros/s/AKfycbzMNwFvGwCRszlJbzwSk5Wt6ZUpKzqCwqrYRjVqK7pPn6evlE3-Z2C6wt-yVpy55w4/exec"},{"kelas":"X DKV 2","url":"https://script.google.com/macros/s/AKfycbwFLYSUmGRxgGid-ytinA7vR4MR3otIzTzBGXhz_XHRRP3uiMu2BuzFVj3oRxd8Hh4z/exec"},{"kelas":"X TAB 2","url":"https://script.google.com/macros/s/AKfycbzppfj-L7brBM7A_jI-0qyFzwjfSUns0Wls_jyGD2iAOF8d4mGugAKW_MPJVa_sU13z/exec"},{"kelas":"X TBSM 1","url":"https://script.google.com/macros/s/AKfycbzTheMtxT09QoYxVVtpRv8mVkO88ayvpMZHe7pbLbjNOWzsFNNg7vCREyCw4V5iiXM/exec"},{"kelas":"X TBKR","url":"https://script.google.com/macros/s/AKfycbyQz4nWYb4-LQAa59C3CP2ImZLxDmaOVb8ix_oYsT3g_2np83GWPSe53_tmhSJ92A4/exec"},{"kelas":"XI DKV 3","url":"https://script.google.com/macros/s/AKfycbyy7B1kKTwuTQien1APZqmAzLGxUq-0-ddZpmuzuL6ICgT6E-bK4ERADIo6XW27dJA/exec"}];
+const SPREADSHEET_MAP_DEFAULT = [{"kelas":"X DKV 3","url":"https://script.google.com/macros/s/AKfycbwn4IkV2SKg21i1-nWUVDFVSGcYRFkgKmlw3_Oy42jJSKJ5PMh-Ak_Yvz6_pENUF-CC/exec"},{"kelas":"X TAB 1","url":"https://script.google.com/macros/s/AKfycbym0vwAmK8Qynhttl1_hjaV5f9wHibddnZ4NDnT1gsk406GmvPCMBUZDwtxovEVU8Sz/exec"},{"kelas":"XI DKV 1","url":"https://script.google.com/macros/s/AKfycbzIUrTJPRkpA2l5RTHEgFoUXq8fsjRwL4W8iLwf3j0lo__nT6aHJAhvl9zt4p5yQW8/exec"},{"kelas":"X DKV 1","url":"https://script.google.com/macros/s/AKfycbzuQqEdy0tqXKIm1tAIRhm4AJ-4GFxA4J2fAFS0nNiMSEJtc9eRfiyqQjj_hsUv-2w/exec"},{"kelas":"X DKV 2","url":"https://script.google.com/macros/s/AKfycbxdrrz2rmHzvaUZdTUzFZoVZBkNlbyEKANTms6DwN1ltPL895FHF9RfICDJLiW_mWM1/exec"},{"kelas":"X TAB 2","url":"https://script.google.com/macros/s/AKfycbwfQe0-eahlXRumdphVV1Ki3cpGfjGjnkm0a7VYrUGVbBPtkP5kLoAMxv8ceNmJ-HJc/exec"},{"kelas":"X TBSM 1","url":"https://script.google.com/macros/s/AKfycbw6pBpZ1Nvswn887GnS_h0CM2guMCgpg4syOjDVwiML7f8mWakAGUtZrquMlnPSMdU/exec"},{"kelas":"X TBKR","url":"https://script.google.com/macros/s/AKfycbx4yc70brgagFjNwkjGfK2EQbTGNaSAMiUxCZtGqcy3QEFfh0Y3ZPNWRQZUWo9tzIA/exec"},{"kelas":"XI DKV 3","url":"https://script.google.com/macros/s/AKfycbxFS_R2zsVyuxUxzIrYcsIiOP2K8eKTum_QNP4cILLFLPpXGw5sIE_EMCLc9BHhXrQ/exec"}];
 const MAPEL_DEFAULT = ["Informatika","Pendidikan Agama Islam","Produk Kreatif dan Kewirausahaan"];
 const SOAL_MAPEL_DEFAULT = {"Informatika":[{"q":"Teknologi informasi dan komunikasi dapat diartikan sebagai segala kegiatan yang berkaitan dengan pemrosesan, manipulasi, pengolahan, pemindahan, dan penyampaian informasi menggunakan suatu media. Pernyataan ini merujuk pada definisi...","o":["TIK","Hardware","Software","Brainware","Jaringan"],"a":0},{"q":"Aplikasi media komunikasi yang memungkinkan pengguna untuk mengirim pesan, video call, dan melakukan panggilan grup baik di smartphone maupun desktop adalah...","o":["Telegram","WhatsApp","Line","Skype","Google Meet"],"a":1},{"q":"Google Meet merupakan aplikasi video conference yang memiliki keunggulan utama dalam hal kemudahan penggunaan, yaitu...","o":["Memiliki fitur edit video canggih","Hanya bisa diakses melalui smartphone","Cukup membagikan dan join link tautan","Wajib menginstal aplikasi tambahan","Tidak memerlukan koneksi internet"],"a":2},{"q":"Layanan komputer yang dibuat dan dipakai untuk melakukan pencarian data atau liputan yang tersimpan pada layanan www, ftp, atau publikasi milis disebut...","o":["Browser","Email","Search Engine","Mail Merge","OLE"],"a":2},{"q":"Untuk memfilter pencarian di Google agar hanya menampilkan dokumen dengan format PDF, perintah tambahan yang harus diketik di kolom pencarian adalah...","o":["site:pdf","define:pdf","\"pdf\"","keyword:pdf","filetype:pdf"],"a":4},{"q":"Perintah pencarian site:id pada mesin pencari Google berfungsi untuk...","o":["Menampilkan situs web yang berasal dari negara Indonesia","Mencari file dengan ekstensi .id","Mendefinisikan kata kunci bahasa Indonesia","Menghilangkan hasil pencarian dari domain .id","Mengurutkan hasil pencarian berdasarkan wilayah"],"a":0},{"q":"Penggunaan tanda petik dua (\" \") dalam pencarian di Google bertujuan untuk...","o":["Mencari arti dari sebuah kata","Mencari informasi yang lebih spesifik atau frasa yang tepat","Menghapus hasil pencarian yang tidak relevan","Mencari file berdasarkan jenis ekstensi","Membuka situs web dari negara tertentu"],"a":1},{"q":"Fitur Define pada mesin pencari Google digunakan khusus untuk...","o":["Mencari definisi atau arti dari kata-kata yang sedang tren","Mengunduh file definisi dokumen","Memblokir situs yang tidak aman","Menerjemahkan bahasa asing","Mencari situs web resmi pemerintah"],"a":0},{"q":"Fitur Table of Contents pada Microsoft Word digunakan untuk...","o":["Membuat daftar pustaka secara otomatis","Membuat indeks kata secara manual","Membuat daftar isi dari garis besar isi dokumen","Menggabungkan dua dokumen berbeda","Membuat grafik dari data tabel"],"a":2},{"q":"Mail Merge merupakan fitur pada Ms. Word yang digunakan untuk...","o":["Membuat presentasi yang interaktif","Menghitung data numerik secara otomatis","Menghubungkan file Word dengan file PowerPoint","Mengedit gambar yang disisipkan","Membuat tulisan yang banyak dalam format yang sama dengan cepat"],"a":4},{"q":"Langkah pertama untuk melakukan panggilan grup di WhatsApp adalah membuka aplikasi, kemudian mengetuk tab Panggilan dan mengetuk ikon...","o":["Kamera","Telepon (+)","Mikrofon","Kontak","Pengaturan"],"a":1},{"q":"Saat membuat rapat baru di Google Meet melalui laptop, setelah mengklik \"Rapat baru\", akan muncul beberapa opsi. Salah satu opsi tersebut adalah...","o":["Menghapus riwayat rapat","Membuat rapat terjadwal","Mengubah latar belakang virtual","Menginstal plugin tambahan","Menghapus akun Google"],"a":1},{"q":"Dalam Zoom Meeting, setelah menjadwalkan meeting dan mengklik \"Done\", langkah selanjutnya untuk mengundang peserta adalah memilih menu...","o":["Leave","Record","Invite","Chat","Share Screen"],"a":2},{"q":"Salah satu keunggulan Microsoft Bing Search dibandingkan mesin pencari lain yang disebutkan dalam teks adalah...","o":["Memiliki fitur email terintegrasi","Gambar yang ditampilkan lebih banyak dan detail","Merupakan mesin pencari default Firefox","Tidak memerlukan koneksi internet","Hanya bisa mencari dokumen PDF"],"a":1},{"q":"Mesin pencari yang merupakan salah satu mesin pencari default yang digunakan oleh browser Firefox adalah...","o":["Google Search","Microsoft Bing","Yahoo! Search","DuckDuckGo","Baidu"],"a":2},{"q":"Untuk membuat daftar isi otomatis, judul bab utama dalam dokumen Ms. Word harus ditandai dengan style...","o":["Heading 1","Heading 2","Heading 3","Normal","Title"],"a":0},{"q":"Jika format Heading pada dokumen berubah tidak sesuai keinginan, pengguna dapat memperbaikinya dengan cara klik kanan pada Style, lalu memilih...","o":["Update","Modify","Delete","New Style","Reapply"],"a":1},{"q":"Fungsi dari tombol \"Update Table\" pada fitur Table of Contents adalah untuk...","o":["Menghapus seluruh daftar isi","Sinkronisasi antara daftar isi dengan perubahan terbaru dalam dokumen","Mengubah font seluruh dokumen","Menyimpan dokumen dalam format PDF","Menambahkan halaman baru secara otomatis"],"a":2},{"q":"Untuk membuat Mail Merge, dua jenis file yang harus disiapkan adalah...","o":["File Ms. Word dan file Ms. PowerPoint","File Ms. Excel sebagai sumber data dan Ms. Word sebagai naskah utama","File PDF dan file Ms. Word","File gambar dan file Ms. Excel","File Ms. Access dan file Ms. Word"],"a":1},{"q":"Untuk menghubungkan naskah utama Ms. Word dengan data sumber Ms. Excel, menu yang harus diklik adalah...","o":["Home - Paste","Insert - Table","References - Table of Contents","Mailing - Start Mail Merge","View - Macro"],"a":3},{"q":"Setelah memilih sumber data di Mail Merge, untuk memasukkan nama kolom (misalnya nama peserta) ke dalam naskah utama, pengguna harus memilih sub-menu...","o":["Preview Results","Finish & Merge","Insert Merge Field","Highlight Merge Fields","Check for Errors"],"a":2},{"q":"Untuk melihat apakah nama-nama pada sertifikat Mail Merge sudah benar sebelum dicetak, pengguna dapat menggunakan sub-menu...","o":["Edit Recipient List","Preview Results","Find Recipient","AutoCheck","Highlight Merge Fields"],"a":1},{"q":"Object Linking and Embedding (OLE) merupakan fitur pada Ms. Office yang digunakan untuk...","o":["Menghapus objek dari dokumen","Menggabungkan suatu objek yang berasal dari aplikasi lain","Mengunci dokumen dengan password","Mengubah format file Word ke PDF","Membuat makro otomatis"],"a":2},{"q":"Perbedaan mendasar antara Object Linking dan Object Embedding pada OLE adalah...","o":["Linking tidak memerlukan file sumber, Embedding memerlukan","Linking akan memperbarui data jika sumber diubah, Embedding tidak terpengaruh perubahan sumber","Embedding membuat file menjadi lebih kecil, Linking memperbesar file","Linking hanya untuk gambar, Embedding hanya untuk teks","Embedding memerlukan koneksi internet, Linking tidak"],"a":1},{"q":"Langkah melakukan Object Linking dari Excel ke Word adalah menyalin data, lalu di Word memilih Paste Special, kemudian memilih opsi...","o":["Paste","Paste Link","Keep Text Only","Picture","Keep Source Formatting"],"a":1},{"q":"Jika pengguna hanya ingin menempelkan data dari Excel ke Word tanpa ingin data tersebut berubah saat file Excel asli diedit, maka pada Paste Special harus dipilih opsi...","o":["Paste Link","Microsoft Word Document","Paste","HTML Format","Unformatted Text"],"a":2},{"q":"Untuk memasukkan tabel Ms. Excel ke dalam slide Ms. PowerPoint, menu yang harus dipilih adalah...","o":["Home - New Slide","Insert - Table - Excel Spreadsheet","Design - Format Background","Transitions - Effect Options","Slide Show - From Beginning"],"a":1},{"q":"Untuk membuat diagram pada Ms. Word menggunakan data dari Excel, menu yang harus diklik adalah...","o":["Layout - Margins","References - Citations","Insert - Chart","Mailings - Envelopes","Review - Translate"],"a":2},{"q":"Fitur Hyperlink pada Ms. PowerPoint dapat digunakan untuk...","o":["Menghapus slide yang tidak diperlukan","Menghubungkan teks atau objek dengan slide lain atau dokumen/website luar","Mengubah warna latar belakang slide","Menambahkan animasi pada teks","Mengecilkan ukuran file presentasi"],"a":1},{"q":"Sesuai aspek Kesehatan, Keselamatan Kerja, dan Lingkungan (K3L), jarak pandang minimal yang disarankan antara mata dan layar monitor adalah...","o":["10 cm","20 cm","30 cm","40 cm","50 cm"],"a":3},{"q":"Seorang siswa ingin mencari dokumen skripsi format PDF yang hanya berasal dari situs web pendidikan di Indonesia (.ac.id). Kombinasi perintah pencarian Google yang paling tepat adalah...","o":["filetype:pdf site:ac.id","define:pdf site:ac.id","\"skripsi\" filetype:doc","site:pdf filetype:ac.id","keyword:skripsi \"ac.id\""],"a":0},{"q":"Dalam mengerjakan tugas, Andi menemukan istilah teknis \"Cloud Computing\" yang tidak ia pahami. Cara tercepat dan paling tepat untuk mencari arti istilah tersebut di Google adalah...","o":["Mengetik \"Cloud Computing\" tanpa tanda kutip","Menggunakan perintah filetype:Cloud Computing","Menggunakan perintah define:Cloud Computing","Menggunakan perintah site:Cloud Computing","Mencari di menu Table of Contents"],"a":2},{"q":"Saat melakukan Mail Merge untuk membuat 100 sertifikat, kolom di Excel bernama \"NAMA_LENGKAP\". Setelah proses Insert Merge Field, tampilan di naskah utama Ms. Word akan muncul sebagai...","o":["[NAMA_LENGKAP]","{NAMA_LENGKAP}","<<NAMA_LENGKAP>>","(NAMA_LENGKAP)","NAMA_LENGKAP"],"a":2},{"q":"Budi membuat laporan di Word yang berisi tabel data dari Excel menggunakan metode Object Linking. Suatu hari, data di file Excel sumber diubah nilainya. Apa yang terjadi pada tabel di file Word Budi?","o":["Tidak akan berubah sama sekali","Akan berubah secara otomatis mengikuti data sumber","Akan menjadi error dan tidak bisa dibuka","Akan terhapus secara otomatis","Akan berubah menjadi format gambar"],"a":1},{"q":"Sari telah membuat daftar isi menggunakan Table of Contents. Namun, ia baru menyadari bahwa ukuran font pada Heading 1 terlalu kecil. Agar semua Heading 1 di seluruh dokumen berubah ukurannya secara seragam, Sari harus...","o":["Mengubah font satu per satu secara manual","Menghapus daftar isi dan membuatnya ulang dari awal","Menggunakan fitur Modify pada Style Heading 1","Menggunakan fitur Update Table","Mengubah font di menu Page Layout"],"a":2},{"q":"Dalam presentasi PowerPoint, Rina ingin agar saat teks \"Lihat Data Lengkap\" diklik, presentasi akan membuka file Excel yang tersimpan di komputer. Fitur yang harus digunakan Rina adalah...","o":["Insert - Chart","Insert - Hyperlink (pilih Existing File or Web Page)","Insert - Table - Excel Spreadsheet","Transitions - Morph","Slide Show - Rehearse Timings"],"a":1},{"q":"Mengapa penggunaan Mail Merge dianggap lebih efisien dibandingkan mengetik sertifikat satu per satu secara manual?","o":["Karena Mail Merge dapat memperbaiki ejaan secara otomatis","Karena Mail Merge dapat menghasilkan banyak dokumen dengan format sama secara cepat dan praktis","Karena Mail Merge tidak memerlukan file sumber data","Karena Mail Merge dapat menerjemahkan bahasa secara otomatis","Karena Mail Merge dapat mengompresi ukuran file"],"a":1},{"q":"Urutan langkah yang benar untuk membuat daftar isi otomatis di Ms. Word dari awal adalah...","o":["1. Klik Table of Contents, 2. Pilih Heading, 3. Update Table","1. Tandai judul dengan Heading, 2. Klik References - Table of Contents, 3. Pilih format","1. Ketik daftar isi manual, 2. Blok teks, 3. Klik Insert Hyperlink","1. Klik Insert Chart, 2. Masukkan data, 3. Klik OK","1. Buka Mail Merge, 2. Pilih sumber data, 3. Insert Merge Field"],"a":1},{"q":"Sebuah perusahaan ingin menyisipkan logo dan grafik dari Excel ke laporan Word. Grafik tersebut bersifat final dan tidak boleh berubah meskipun file Excel asli dihapus atau dimodifikasi di masa depan. Metode OLE yang paling tepat adalah...","o":["Object Linking","Object Embedding","Mail Merge","Hyperlink","Table of Contents"],"a":1},{"q":"Seorang peneliti ingin mencari frasa tepat \"Dampak Pandemi COVID-19 terhadap Pendidikan SMK\" di Google agar hasil pencarian tidak memecah kata-kata tersebut. Perintah yang harus digunakan adalah...","o":["Dampak Pandemi COVID-19 terhadap Pendidikan SMK","filetype:\"Dampak Pandemi COVID-19 terhadap Pendidikan SMK\"","\"Dampak Pandemi COVID-19 terhadap Pendidikan SMK\"","define:\"Dampak Pandemi COVID-19 terhadap Pendidikan SMK\"","site:\"Dampak Pandemi COVID-19 terhadap Pendidikan SMK\""],"a":2},{"q":"Dalam Zoom Meeting, setelah pengguna mengisi judul rapat, tanggal, dan jam pelaksanaan pada menu Schedule, langkah yang harus dilakukan sebelum mengundang peserta adalah...","o":["Klik tombol Leave","Klik tombol Record","Klik tombol Done","Klik tombol Share Screen","Klik tombol Mute"],"a":2},{"q":"Komunikasi daring terbagi menjadi dua macam, yaitu sinkron dan asinkron. Aplikasi seperti WhatsApp dan Zoom Meeting yang memungkinkan interaksi secara langsung dan serempak termasuk dalam kategori...","o":["Komunikasi asinkron","Komunikasi sinkron","Komunikasi satu arah","Komunikasi offline","Komunikasi analog"],"a":1},{"q":"Untuk menyajikan data angka dari Excel ke dalam bentuk visual grafik yang tertanam di dalam dokumen Ms. Word, langkah yang paling tepat adalah...","o":["Copy-paste biasa tanpa opsi khusus","Menggunakan fitur Mail Merge","Menggunakan menu Insert - Chart","Menggunakan menu References - Table of Contents","Menggunakan menu Review - Comments"],"a":2},{"q":"Seorang siswa ingin mencari berita terkini tentang \"Teknologi Informatika\" hanya dari situs web detik.com. Kombinasi pencarian yang paling efektif adalah...","o":["\"Teknologi Informatika\" site:detik.com","filetype:detik.com \"Teknologi Informatika\"","define:detik.com \"Teknologi Informatika\"","\"Teknologi Informatika\" filetype:html","site:com \"Teknologi Informatika\""],"a":0},{"q":"Berdasarkan aspek K3L (Kesehatan, Keselamatan Kerja, dan Lingkungan), posisi tubuh yang disarankan saat menggunakan komputer dalam waktu lama adalah...","o":["Duduk membungkuk agar lebih dekat ke layar","Lutut membentuk sudut 90Â° dan kaki menapak di lantai","Layar monitor ditempatkan lebih rendah dari posisi dada","Jarak pandang kurang dari 20 cm untuk detail","Menggunakan kursi tanpa sandaran punggung"],"a":1},{"q":"Setelah menambahkan beberapa bab baru di tengah dokumen Ms. Word yang sudah memiliki Table of Contents, nomor halaman dan judul di daftar isi menjadi tidak akurat. Solusi untuk memperbaikinya adalah...","o":["Menghapus daftar isi dan mengetik ulang secara manual","Mengubah font seluruh dokumen","Melakukan klik kanan pada daftar isi, lalu pilih \"Update Table\"","Menyimpan dokumen dengan nama baru","Menggunakan fitur Mail Merge"],"a":2},{"q":"Saat mengintegrasikan Ms. PowerPoint dan Ms. Excel menggunakan fitur \"Insert - Table - Excel Spreadsheet\", apa yang terjadi pada slide PowerPoint?","o":["Muncul worksheet Excel mini yang dapat diedit langsung di dalam slide","File Excel asli akan terhapus dari komputer","PowerPoint akan otomatis membuat grafik 3D","Slide akan berpindah ke mode presenter","Data Excel akan terkunci dan tidak bisa diubah"],"a":0},{"q":"Dalam proses Mail Merge, fungsi dari tombol \"Next Record\" pada tab Mailings adalah untuk...","o":["Menghapus data yang salah di file Excel","Memindahkan tampilan pratinjau ke data penerima berikutnya","Menyimpan dokumen Word menjadi PDF","Menghubungkan ke sumber data yang baru","Mengirim email secara otomatis ke semua penerima"],"a":1},{"q":"Seorang guru ingin menjelaskan arti istilah \"Algoritma\" kepada siswa menggunakan proyektor. Ia membuka browser dan ingin langsung menampilkan definisi resmi dari kata tersebut. Fitur mesin pencari yang paling tepat digunakan adalah...","o":["Filetype","Site","Tanda petik dua","Define","Image Search"],"a":3},{"q":"Sandra, ketua OSIS, harus membuat program kerja, mencari referensi kegiatan pandemi, membuat laporan dengan daftar isi, dan mempresentasikannya. Rangkaian aplikasi TIK yang paling efisien dan terintegrasi untuk menyelesaikan tugas ini adalah...","o":["Hanya menggunakan Notepad dan kalkulator","Menggunakan mesin pencari (Google) untuk referensi, Ms. Word (Table of Contents) untuk laporan, dan Ms. PowerPoint (Hyperlink/Integrasi) untuk presentasi","Mencari referensi di koran fisik, mengetik laporan manual, dan menggambar presentasi di kertas","Menggunakan WhatsApp untuk menulis laporan panjang dan Zoom untuk mencetak dokumen","Menggunakan fitur Mail Merge untuk membuat satu slide presentasi"],"a":1}],"Produk Kreatif dan Kewirausahaan":[{"q":"Siapakah yang disebut sebagai wirausahawan menurut teks materi?","o":["Seseorang yang memiliki kemampuan untuk mengatur dan mengembangkan suatu usaha","Seseorang yang hanya bekerja untuk mencari gaji bulanan","Seseorang yang menghindari segala bentuk risiko bisnis","Seseorang yang bergantung sepenuhnya pada investor","Seseorang yang bekerja di instansi pemerintah"],"a":0},{"q":"Berikut ini yang merupakan contoh wirausaha dalam pembuatan produk-produk teknik komputer dan informatika adalah...","o":["Pertanian hidroponik dan perikanan darat","Jasa pembuat brosur, poster, dan pembuatan web","Perdagangan barang konsumsi secara tradisional","Industri pengolahan bahan baku logam berat","Jasa konsultan hukum dan perpajakan"],"a":1},{"q":"Berdasarkan Tabel 1.1, faktor yang memengaruhi semangat kerja wirausaha yang berkaitan dengan adanya konsumen dan pemasok sebagai relasi bisnisnya adalah...","o":["Minat","Modal","Relasi","Peluang","Inovasi"],"a":2},{"q":"Salah satu faktor penyebab keberhasilan seorang wirausaha adalah...","o":["Cepat puas dengan hasil yang dicapai","Mengandalkan keberuntungan semata","Mengabaikan masukan dari konsumen","Memiliki kemampuan memimpin dan mengambil keputusan","Tidak memiliki perencanaan yang matang"],"a":3},{"q":"Faktor-faktor penyebab kegagalan seorang wirausaha di antaranya adalah...","o":["Memiliki relasi yang sangat luas","Selalu berorientasi pada keuntungan","Memiliki visi dan perspektif masa depan","Tekun dan disiplin dalam bekerja","Kurang ulet, cepat putus asa, dan kurang teliti"],"a":4},{"q":"Perbedaan persepsi antara wiraswasta dan wirausaha terletak pada penekanan. Wiraswasta lebih menekankan pada...","o":["Kemandirian (swasta) dan survival","Keahlian dalam mengelola keuangan korporat","Penguasaan teknologi informasi terkini","Ekspansi pasar ke luar negeri","Keuntungan finansial semata"],"a":0},{"q":"Berdasarkan data BPS Sensus Ekonomi 2016, jumlah wirausahawan di Indonesia mengalami kenaikan sekitar...","o":["1 juta orang dari hasil SE 2006","4 juta orang dari hasil SE 2006","10 juta orang dari hasil SE 2006","17 juta orang dari hasil SE 2006","22 juta orang dari hasil SE 2006"],"a":1},{"q":"Bekerja efektif dan efisien berarti...","o":["Bekerja tanpa henti mengorbankan waktu istirahat","Bekerja hanya ketika ada pengawasan dari atasan","Mencapai hasil sesuai rencana dengan pengorbanan waktu, tenaga, pikiran, dan biaya sekecil mungkin","Bekerja dengan biaya tinggi untuk hasil yang maksimal","Mengabaikan perencanaan demi kecepatan kerja"],"a":2},{"q":"Tiga tipe kreativitas yang dapat dilakukan oleh calon wirausaha adalah...","o":["Meniru, menyalin, dan mendistribusikan","Merencanakan, mengeksekusi, dan mengevaluasi","Mengamati, menanya, dan mengasosiasikan","Menciptakan, memodifikasi, dan mengombinasikan","Menghindar, menunda, dan menyerah"],"a":3},{"q":"Ciri-ciri seseorang yang memiliki motif berprestasi tinggi dalam wirausaha adalah...","o":["Menghindari tanggung jawab personal","Menyalahkan orang lain atas kegagalan","Tidak memerlukan umpan balik dari pasar","Takut menghadapi risiko yang diperhitungkan","Selalu memerlukan umpan balik yang segera untuk melihat keberhasilan dan kegagalan"],"a":4},{"q":"(Kasus) Seorang pemilik usaha percetakan gagal karena tidak mampu mengatur pengeluaran dan penerimaan secara cermat, sehingga aliran kas terhambat. Faktor kegagalan apa yang dialami?","o":["Kurang mampu dalam mengendalikan keuangan","Lokasi yang kurang memadai","Ketidakmampuan dalam melakukan transisi","Gagal dalam sebuah perencanaan","Kurangnya pengawasan peralatan"],"a":0},{"q":"Strategi awal dalam menjadi wirausaha dengan mencari pangsa pasar khusus yang kebutuhan utamanya belum terpenuhi oleh kompetitor disebut...","o":["Ekspansi pasar massal","Mencari pasar khusus (niche market)","Diversifikasi produk secara acak","Monopoli pasar lokal","Penetapan harga dumping"],"a":1},{"q":"Risiko yang tidak dapat diukur secara matematis disebut...","o":["Risiko biasa","Risiko sistemik","Risiko yang ambigu","Risiko murni","Risiko spekulatif"],"a":2},{"q":"Karakteristik wirausaha yang memiliki dorongan kuat, energik, memiliki ketekunan, dan berorientasi pada keuntungan disebut...","o":["Leadership","Orisinal","Risk and challenge","Profit oriented","Berorientasi pada masa depan"],"a":3},{"q":"Dalam identifikasi usaha berdasarkan karakteristik wirausaha, seorang wirausaha yang membuat keputusan secara cepat dengan penuh perhitungan menunjukkan sifat...","o":["Dream","Doers","Determination","Dedication","Decisiveness"],"a":4},{"q":"Mengakui jika memiliki kesalahan merupakan elemen penting dalam...","o":["Mentalitas seorang wirausaha tangguh","Strategi menghindari pajak","Teknik manipulasi pasar","Cara menutupi kelemahan produk","Metode menunda pengambilan keputusan"],"a":0},{"q":"Unsur penunjang bekerja efektif dan efisien yang berarti hemat dalam menggunakan waktu, tenaga, dan biaya adalah...","o":["Ketepatan","Penghematan","Kecermatan","Kecepatan","Keselamatan"],"a":1},{"q":"Tahap di mana ide bisnis yang cocok dibiarkan mengendap dahulu agar makin matang sebelum dibuat rencana disebut...","o":["Analisis SWOT","Eksekusi langsung","Masa inkubasi","Evaluasi akhir","Pembubaran tim"],"a":2},{"q":"Penghambat pemikiran kreatif berupa ketentuan atau karakteristik tertentu untuk suatu hal yang membatasi cara pandang disebut...","o":["Pemikiran lain","Pemikiran kemungkinan","Intuisi bisnis","Stereotip","Fleksibilitas"],"a":3},{"q":"Jika arah pendidikan adalah untuk menghasilkan sosok individu yang lebih lihai dalam bisnis/uang atau memiliki kecerdasan finansial (FQ), pendidikan yang lebih tepat adalah...","o":["Pendidikan akademik murni","Pendidikan vokasional tanpa praktik","Pendidikan karakter sosial","Pendidikan kewarganegaraan","Pendidikan wirausaha"],"a":4},{"q":"(Kasus) Seorang wirausaha desain grafis selalu meniru tren tanpa modifikasi dan cepat menyerah saat ada kritik minor. Faktor kegagalan yang paling dominan adalah...","o":["Kurang kreatif dan cepat putus asa","Memiliki modal yang terlalu besar","Terlalu banyak relasi bisnis","Lokasi usaha yang sangat strategis","Kelebihan dalam kemampuan manajerial"],"a":0},{"q":"Mengapa wirausaha di bidang produk kreatif teknik komputer dan informatika dituntut untuk kreatif, efektif, dan efisien?","o":["Agar dapat menghindari semua bentuk risiko","Untuk mencapai hasil sesuai rencana dengan pengorbanan sekecil mungkin","Supaya dapat meniru kompetitor dengan mudah","Agar tidak perlu berinteraksi dengan konsumen","Untuk menghabiskan modal usaha secepat mungkin"],"a":1},{"q":"Dalam konteks risiko, ketidakpastian murni didefinisikan sebagai...","o":["Risiko yang dapat dihitung dengan rumus statistik","Risiko yang hanya terjadi pada perusahaan besar","Ketidakpastian yang tidak bisa diukur dengan cara apa pun","Risiko yang sudah memiliki asuransi jaminan","Ketidakpastian yang dapat diprediksi dengan akurat"],"a":2},{"q":"Tindakan wirausaha yang bersedia mendistribusikan kepemilikan bisnisnya pada orang-orang kepercayaannya sesuai dengan karakteristik...","o":["Destiny","Dollars","Details","Distribute","Devotion"],"a":3},{"q":"Sifat pesimis pada wirausaha sebenarnya berkaitan erat dengan...","o":["Fokus seseorang akan peluang emas","Keyakinan pada keberhasilan jangka panjang","Kemampuan analisis data yang tinggi","Keberanian mengambil tantangan baru","Fokus seseorang akan kegagalan"],"a":4},{"q":"Contoh penerapan \"Melihat segala sesuatu dengan cara yang tidak biasa\" dalam kreativitas wirausaha adalah...","o":["Menemukan solusi desain yang tidak konvensional untuk masalah klien","Mengikuti semua instruksi klien tanpa pertanyaan","Meniru persis desain pesaing yang sedang viral","Menolak menggunakan teknologi baru dalam bekerja","Bekerja hanya pada jam kantor yang standar"],"a":0},{"q":"Apa tujuan utama dari analisis kekuatan, kelemahan, peluang, dan ancaman dalam perencanaan bekerja efektif?","o":["Untuk menakut-nakuti calon investor","Mengandung bahan-bahan yang sangat penting untuk perencanaan","Agar terlihat sibuk di depan karyawan","Untuk menunda peluncuran produk","Menghindari pembuatan laporan keuangan"],"a":1},{"q":"Seorang wirausaha yang mencintai pekerjaan bisnisnya dan produk yang dihasilkannya akan mendorong keberhasilan yang sangat efektif untuk menjual produknya. Ini adalah karakteristik...","o":["Dream","Doers","Devotion","Determination","Details"],"a":2},{"q":"Faktor eksternal yang dapat meningkatkan semangat kerja wirausaha menurut Tabel 1.1 adalah...","o":["Minat dan bakat alami","Modal pribadi yang besar","Kesehatan fisik yang prima","Peluang dan Relasi","Pendidikan formal yang tinggi"],"a":3},{"q":"Mengapa wirausaha harus menghindari kata-kata yang mematahkan semangat?","o":["Agar tidak perlu mendengarkan saran siapa pun","Karena semua kritik pasti salah dan tidak berguna","Supaya bisa sombong terhadap pesaing","Agar tidak perlu melakukan introspeksi diri","Agar usaha bisa maju dan tidak terhambat oleh kritik yang tidak masuk akal"],"a":4},{"q":"(Kasus) Sebuah startup pembuatan web mengalami kegagalan karena pendirinya tidak memiliki kemampuan mengelola SDM dan mengoordinasikan operasi. Berdasarkan materi, ini termasuk faktor kegagalan...","o":["Kurang berpengalaman baik dalam kemampuan teknik","Lokasi yang kurang memadai","Ketidakmampuan dalam melakukan transisi","Gagal dalam sebuah perencanaan","Kurangnya pengawasan peralatan"],"a":0},{"q":"Mengapa \"Dollars\" dalam karakteristik wirausaha (Tabel 1.3) menyatakan bahwa uang bukan motivasi utama, melainkan ukuran kesuksesan?","o":["Karena wirausaha dilarang mencari keuntungan","Karena motivasi wirausaha bukan karena masalah uang, tetapi uang dianggap sebagai ukuran kesuksesan bisnisnya","Karena uang tidak memiliki nilai dalam bisnis","Karena wirausaha hanya mengandalkan barter","Karena keuntungan hanya bersifat sementara"],"a":1},{"q":"Bagaimana hubungan antara sikap \"fleksibel\" dan \"berani mengambil risiko\" dalam menghadapi perubahan iklim usaha?","o":["Fleksibel berarti menolak perubahan, sedangkan risiko harus dihindari","Fleksibel hanya berlaku untuk usaha besar, risiko untuk usaha kecil","Sikap fleksibel adalah adaptif terhadap perubahan situasional, yang merupakan bentuk nyata dari keberanian mengambil risiko untuk bertahan","Tidak ada hubungan antara fleksibilitas dan pengambilan risiko","Fleksibel berarti mengubah tujuan bisnis setiap hari tanpa alasan"],"a":2},{"q":"Jika seorang wirausaha hanya berfokus pada \"pemikiran kemungkinan (probabilitas)\" secara berlebihan, apa dampak negatifnya terhadap kreativitas?","o":["Meningkatkan kecepatan inovasi secara drastis","Mempermudah pengambilan keputusan yang kompleks","Membuat wirausaha terlalu optimis tanpa dasar","Menghambat seseorang dalam menghadapi kenyataan yang sebenarnya dan melewatkan kesempatan yang hanya datang sekali","Membantu wirausaha menghindari semua bentuk kegagalan"],"a":3},{"q":"(Kasus) Seorang animator memiliki ide brilian tetapi terus menunda pelaksanaannya karena menunggu \"waktu yang paling tepat\". Menurut strategi wirausaha, apa kesalahan mendasarnya?","o":["Terlalu cepat dalam mengambil keputusan","Tidak melakukan analisis SWOT","Kelebihan modal dalam pengembangan ide","Mengabaikan kelemahan kompetitor","Tidak segera mengimplementasi ide menjadi sebuah tindakan, karena waktu paling tepat tidak bisa diprediksi"],"a":4},{"q":"Mengapa pendidikan wiraswasta lebih tepat untuk menghasilkan individu dengan kecerdasan emosional (EQ) dan adversitas (AQ)?","o":["Karena wiraswasta menekankan pada kemandirian, mental baja, dan menghadapi tantangan hidup","Karena wiraswasta hanya fokus pada perhitungan laba rugi","Karena wiraswasta tidak memerlukan interaksi sosial","Karena wiraswasta menjamin kekayaan instan","Karena wiraswasta menghindari tanggung jawab sosial"],"a":0},{"q":"Dalam konteks \"Destiny\" pada Tabel 1.3, seorang wirausaha bertanggung jawab terhadap nasibnya. Apa implikasi praktisnya dalam pengambilan keputusan bisnis?","o":["Selalu menunggu instruksi dari pemerintah","Tidak mau tergantung pada orang lain dalam menentukan arah dan tujuan bisnis","Menyerahkan semua keputusan kepada mitra bisnis","Mengandalkan keberuntungan dalam setiap langkah","Menghindari tanggung jawab atas kegagalan"],"a":1},{"q":"(Analisis) Seorang wirausaha jasa foto shooting gagal karena lokasinya di daerah yang sangat sepi dan sulit dijangkau, meskipun kualitas fotonya bagus. Ini adalah contoh faktor kegagalan...","o":["Sikap yang kurang sungguh-sungguh","Kurang berpengalaman dalam kemampuan teknik","Lokasi yang kurang memadai","Tidak kompeten dalam manajerial","Kurangnya pengawasan peralatan"],"a":2},{"q":"Bagaimana cara seorang wirausaha yang tangguh \"Mengenal Bisnis Anda\" sesuai dengan materi?","o":["Dengan mengucilkan diri dari lingkungan sekitar","Dengan menganggap bisnis sudah berjalan sempurna tanpa evaluasi","Dengan menutup diri dari kritik dan saran","Membuka diri terhadap informasi yang berkembang dan menghargai apa pun yang bisa membantu perkembangan bisnis","Dengan hanya fokus pada keuntungan jangka pendek"],"a":3},{"q":"Jika seorang wirausaha memiliki \"Dedication\" yang tinggi, bagaimana pola perilakunya terhadap kepentingan pribadi dan keluarga?","o":["Selalu mengutamakan liburan daripada pekerjaan","Tidak pernah bekerja di luar jam kantor","Mengabaikan bisnis demi kepentingan pribadi","Membagi waktu secara ketat tanpa fleksibilitas","Kadang-kadang mengorbankan kepentingan keluarga untuk sementara waktu, memusatkan semua perhatian pada bisnis"],"a":4},{"q":"(Kasus) Seorang wirausaha muda selalu meminta pendapat orang lain sebelum mengambil keputusan sekecil apa pun, sehingga proses bisnis menjadi sangat lambat. Karakteristik 10D yang paling dilanggar adalah...","o":["Decisiveness","Dream","Doers","Determination","Distribute"],"a":0},{"q":"Mengapa \"Kejujuran\" disebut sebagai modal awal yang sangat berharga bagi wirausahawan tangguh?","o":["Karena kejujuran membuat bisnis berjalan lambat tapi pasti","Karena kejujuran dapat menimbulkan respek dari konsumen dan menjamin keberlangsungan usaha","Karena kejujuran adalah syarat untuk mendapatkan modal bank","Karena kejujuran memudahkan dalam menipu pesaing","Karena kejujuran tidak memiliki dampak pada reputasi bisnis"],"a":1},{"q":"Dalam pengembangan kreativitas, \"Mengombinasikan\" berarti...","o":["Menghapus ide lama dan menggantinya dengan ide baru","Meniru ide orang lain tanpa perubahan","Aktivitas mengombinasikan dua hal atau lebih yang sebelumnya tidak saling berhubungan","Memisahkan ide menjadi bagian-bagian kecil","Menolak semua ide yang berasal dari luar"],"a":2},{"q":"Apa perbedaan mendasar antara \"Masa Inkubasi\" dan \"Gagal dalam sebuah perencanaan\"?","o":["Masa inkubasi adalah kegagalan total, sedangkan gagal perencanaan adalah sukses","Masa inkubasi dilakukan oleh manajer, gagal perencanaan oleh wirausaha","Masa inkubasi membutuhkan modal besar, gagal perencanaan tidak","Masa inkubasi adalah membiarkan ide mengendap agar matang, sedangkan gagal perencanaan adalah kesalahan dalam menyusun langkah awal yang mengakibatkan kesulitan pelaksanaan","Tidak ada perbedaan, keduanya adalah hal yang sama"],"a":3},{"q":"Seorang wirausaha berhasil mengidentifikasi keluhan pelanggan terhadap kompetitor dan menjadikannya peluang untuk menawarkan layanan yang lebih baik. Strategi apa yang diterapkan?","o":["Mencari pasar khusus yang belum tergarap","Peka terhadap tren terbaru","Segera mengimplementasi ide","Hindari kata-kata yang mematahkan semangat","Eksplorasikan kelemahan kompetitor"],"a":4},{"q":"Mengapa sifat \"optimis dengan masa depan\" penting, dan apa bahaya dari sifat kehati-hatian yang berlebihan?","o":["Optimis memelihara rencana dan tindakan, sedangkan kehati-hatian berlebihan dapat menyebabkan hilangnya peluang bisnis","Optimis membuat wirausaha ceroboh, kehati-hatian menjamin kesuksesan","Optimis tidak diperlukan, yang penting adalah pesimis","Kehati-hatian berlebihan selalu menghasilkan keuntungan maksimal","Optimis hanya berguna untuk usaha yang sudah besar"],"a":0},{"q":"Analisis data BPS: Peningkatan jumlah wirausaha di luar Pulau Jawa terjadi terutama karena...","o":["Ketatnya regulasi pemerintah di luar Jawa","Belum ketatnya persaingan usaha di luar Jawa dan percepatan pertumbuhan yang signifikan","Tingginya biaya hidup di Pulau Jawa","Kurangnya sumber daya alam di luar Jawa","Kebijakan larangan berwirausaha di Pulau Jawa"],"a":1},{"q":"Jenis risiko yang paling sering dihadapi oleh seorang pengusaha, terutama jika badan usaha yang dimilikinya mengeluarkan produk baru yang belum ada di pasaran, adalah...","o":["Risiko biasa","Risiko yang ambigu","Ketidakpastian murni","Risiko finansial terukur","Risiko operasional standar"],"a":2},{"q":"Seorang wirausaha desain grafis terus belajar software baru dan menyesuaikan gaya desain dengan tren terkini tanpa kehilangan jati diri. Ini mencerminkan karakteristik...","o":["Profit oriented","Risk and challenge","Leadership","Inovatif, kreatif, dan fleksibel","Destiny"],"a":3},{"q":"Kesimpulan utama dari perbedaan wirausaha yang sukses dan tidak lancar berdasarkan sikap dan perilaku adalah...","o":["Wirausaha sukses mengandalkan keberuntungan, yang tidak lancar karena nasib","Wirausaha sukses tidak pernah mengalami kegagalan sedikit pun","Wirausaha sukses selalu memiliki modal besar sejak awal","Wirausaha yang tidak lancar sebenarnya lebih kreatif daripada yang sukses","Wirausaha sukses memiliki sikap tangguh, berani mengambil risiko, dan terus berinovasi, sedangkan yang tidak lancar cenderung cepat putus asa dan kurang adaptif"],"a":4}],"Pendidikan Agama Islam":[{"q":"Apa istilah dalam Al-Qur'an untuk \"berlomba-lomba dalam kebaikan\" seperti yang diperintahkan dalam Q.S. Al-Ma'idah/5: 48?","o":["Fastabiqul khairat","Ta'awun","Tawazun","Amar makruf","Nahi munkar"],"a":0,"p":"Bab 1, Bagian Prolog/Menyimak."},{"q":"Menurut Kamus Besar Bahasa Indonesia (KBBI), apa arti dari kata \"kompetisi\"?","o":["Kerjasama","Persaingan","Perdamaian","Persatuan","Toleransi"],"a":1,"p":"Bab 1, Bagian Manfaat Membiasakan Diri Berkompetisi dalam Kebaikan."},{"q":"Kitab suci yang diturunkan kepada Nabi Muhammad Saw. sebagai pembenar kitab-kitab sebelumnya adalah...","o":["Taurat","Zabur","Al-Qur'an","Injil","Suhuf"],"a":2,"p":"Bab 1, Bagian Penjelasan Ayat."},{"q":"Salah satu perilaku yang mencerminkan kandungan Q.S. Al-Ma'idah/5: 48 dalam kehidupan sehari-hari adalah...","o":["Mengucapkan hamdalah saat makan","Membuang sampah di sungai","Bergaul tanpa batasan syariat","Mengucapkan basmalah saat memulai aktivitas","Menunda-nunda waktu salat"],"a":3,"p":"Bab 1, Bagian Perilaku yang Mencerminkan Kandungan."},{"q":"Siapakah perawi hadis yang menyebutkan tentang perintah segera beramal sebelum datangnya fitnah seperti malam yang gelap gulita?","o":["Abdullah bin Umar","Anas bin Malik","Umar bin Khattab","Aisyah R.A.","Abu Hurairah R.A."],"a":4,"p":"Bab 1, Bagian Hadis tentang Kompetisi dalam Kebaikan."},{"q":"Apa makna awal dari kata \"syir'ah\" atau \"syari'ah\" secara bahasa menurut materi?","o":["Air yang banyak atau jalan menuju sumber air","Jalan yang luas","Agama yang bersifat umum","Hukum yang tidak bisa diubah","Petunjuk yang samar"],"a":0,"p":"Bab 1, Bagian Makna Kosakata."},{"q":"Dalam Q.S. Al-Ma'idah/5: 48, Allah Swt. menyatakan bahwa jika Dia menghendaki, niscaya Dia akan menjadikan manusia...","o":["Terpecah belah","Satu umat saja","Selalu berselisih","Tidak memiliki syariat","Bebas dari ujian"],"a":1,"p":"Bab 1, Bagian Terjemah Ayat."},{"q":"Menurut Dr. Abdullah bin Muhammad Alu Syaikh dalam kitab Lubab at-Tafsir, maksud \"fastabiqul khairat\" adalah...","o":["Menunda amal sampai tua","Mengikuti syariat umat terdahulu","Perintah segera mengamalkan kebaikan dan mengikuti syariat yang menasakh sebelumnya","Berlomba mengumpulkan harta dunia","Mengubah isi kitab suci sesuai hawa nafsu"],"a":2,"p":"Bab 1, Bagian Penjelasan Ayat."},{"q":"Salah satu kandungan Q.S. Al-Ma'idah/5: 48 adalah bahwa Al-Qur'an adalah kitab suci yang...","o":["Bisa diubah oleh manusia","Hanya berlaku untuk umat Nabi Musa","Tidak memiliki petunjuk","Tidak akan berubah meskipun satu huruf","Mengandung syariat yang sama persis dengan Taurat"],"a":3,"p":"Bab 1, Bagian Isi dan Kandungan Ayat."},{"q":"Apa tujuan utama dari kompetisi dalam kebaikan menurut ajaran Islam?","o":["Mendapatkan pujian dari orang lain","Mengalahkan pesaing dengan cara curang","Menunjukkan kekayaan kepada sesama","Mendapatkan kekuasaan politik","Mencari rida Allah Swt."],"a":4,"p":"Bab 1, Bagian Manfaat Membiasakan Diri Berkompetisi dalam Kebaikan."},{"q":"Dalam kajian ilmu tajwid Q.S. Al-Ma'idah/5: 48, hukum bacaan \"Mad Jaiz Munfasil\" terjadi karena...","o":["Mad Tabi'i diikuti Hamzah bukan dalam satu kata","Mad Tabi'i diikuti Hamzah dalam satu kata","Nun mati bertemu huruf ba","Mim mati bertemu huruf ba","Huruf mad bertemu huruf hidup"],"a":0,"p":"Bab 1, Bagian Kajian Ilmu Tajwid."},{"q":"Kata \"Minhaj\" dalam Q.S. Al-Ma'idah/5: 48 memiliki makna...","o":["Air yang sedikit","Jalan yang luas","Agama yang universal","Hukum yang keras","Umat yang satu"],"a":1,"p":"Bab 1, Bagian Makna Kosakata."},{"q":"Mengapa syariat setiap umat bisa berbeda-beda menurut penjelasan dalam materi?","o":["Karena Allah Swt. tidak konsisten","Karena kitab-kitab sebelumnya hilang","Sesuai dengan kondisi dan perkembangan masyarakat pada zamannya","Karena para nabi saling berselisih","Karena manusia tidak mampu menjalankan satu hukum"],"a":2,"p":"Bab 1, Bagian Asbabun Nuzul & Isi Kandungan."},{"q":"Perhatikan perilaku: \"Salat tepat waktu dan menjauhi pergaulan kurang baik.\" Perilaku ini mencerminkan poin...","o":["Menggunakan akal untuk berfilsafat","Mengubah syariat sesuai zaman","Menjual agama dengan kenikmatan dunia","Selalu menaati peraturan-Nya dan menjauhi larangan-Nya","Berlomba-lomba dalam hal duniawi"],"a":3,"p":"Bab 1, Bagian Perilaku yang Mencerminkan Kandungan."},{"q":"Dalam hadis riwayat Muslim, orang yang menjual agamanya dengan kenikmatan dunia diibaratkan mengalami perubahan iman seperti...","o":["Siang menjadi malam","Air menjadi es","Pohon yang tumbang","Matahari yang terbit","Pagi mukmin, sore kafir (atau sebaliknya)"],"a":4,"p":"Bab 1, Bagian Terjemah Hadis."},{"q":"Menurut Hamka dalam Tafsir Al-Azhar, kata \"ilaika\" (kepadamu) dalam Q.S. Al-Ma'idah/5: 48 ditujukan kepada Nabi Muhammad Saw. sebagai...","o":["Penutup para nabi dan rasul yang menyempurnakan risalah sebelumnya","Pembawa syariat yang sama persis dengan Nabi Musa","Pemimpin politik umat Islam di Madinah","Satu-satunya nabi yang menerima kitab suci","Penjaga harta benda umat"],"a":0,"p":"Bab 1, Bagian Penjelasan Ayat."},{"q":"Apa perbedaan mendasar antara \"din\" (agama) dan \"syariat\" berdasarkan makna kosakata?","o":["Din bisa dibatalkan, syariat tidak bisa dibatalkan","Din bersifat umum dan mencakup semua umat, sedangkan syariat adalah tuntunan untuk umat/nabi tertentu yang bisa diganti","Din khusus untuk Nabi Muhammad, syariat untuk semua nabi","Din adalah hukum duniawi, syariat adalah hukum ukhrawi","Tidak ada perbedaan, keduanya bermakna sama"],"a":1,"p":"Bab 1, Bagian Makna Kosakata."},{"q":"Salah satu sikap yang mencerminkan kandungan hadis tentang kompetisi dalam kebaikan adalah...","o":["Menunda amal saleh sampai usia tua","Mengisolasi diri dari masyarakat","Selalu waspada terhadap kemungkinan terjadinya fitnah dengan melakukan amal saleh","Mengikuti hawa nafsu dalam beragama","Berselisih paham dengan umat lain"],"a":2,"p":"Bab 1, Bagian Sikap dan Perilaku yang Mencerminkan Kandungan Hadis."},{"q":"Hukum bacaan \"Mad Wajib Muttasil\" terjadi karena...","o":["Mad Tabi'i bertemu huruf mati karena waqaf","Mad Tabi'i diikuti Hamzah dalam satu kata","Mad Tabi'i diikuti Hamzah bukan dalam satu kata","Nun mati bertemu huruf izhar","Mim mati bertemu huruf mim"],"a":3,"p":"Bab 1, Bagian Kajian Ilmu Tajwid."},{"q":"Apa yang dimaksud dengan \"amal saleh\" menurut istilah dalam konteks kompetisi kebaikan?","o":["Perbuatan yang hanya menguntungkan diri sendiri","Perbuatan yang dilakukan untuk mendapatkan pujian","Perbuatan yang merusak lingkungan demi kemajuan","Perbuatan yang mendatangkan maslahat bagi diri sendiri dan orang lain serta tidak merusak","Perbuatan yang mengikuti hawa nafsu"],"a":4,"p":"Bab 1, Bagian Manfaat Membiasakan Diri Berkompetisi dalam Kebaikan."},{"q":"Asbabun nuzul Q.S. Al-Ma'idah/5: 48 mengingatkan umat Islam agar tidak bersikap seperti umat Nabi Musa A.S. yang...","o":["Tidak mengamalkan dan menegakkan apa yang terkandung dalam kitab yang diturunkan kepada mereka","Selalu berlomba-lomba dalam kebaikan","Menjaga keaslian kitab suci dengan sempurna","Selalu mengikuti syariat yang baru","Tidak pernah berselisih paham"],"a":0,"p":"Bab 1, Bagian Asbabun Nuzul."},{"q":"Dalam Q.S. Al-Ma'idah/5: 48, Allah Swt. menguji manusia terhadap karunia yang telah diberikan. Jawaban yang seharusnya diberikan manusia adalah...","o":["Bersikap sombong","Berlomba-lomba untuk berbuat kebajikan","Mengabaikan nikmat tersebut","Mengklaim nikmat itu hasil usaha sendiri semata","Menyalahkan orang lain atas kekurangan"],"a":1,"p":"Bab 1, Bagian Penjelasan Ayat (Tafsir Ringkas)."},{"q":"Manakah di bawah ini yang merupakan contoh perilaku \"peduli terhadap sekitar\" yang mencerminkan Q.S. Al-Ma'idah/5: 48?","o":["Membuang sampah sembarangan","Menjaga kebersihan lingkungan","Mengikuti pergaulan yang kurang baik","Meninggalkan salat tepat waktu","Bersikap acuh tak acuh terhadap tetangga"],"a":2,"p":"Bab 1, Bagian Perilaku yang Mencerminkan Kandungan."},{"q":"Apa tujuan dari Allah Swt. menjadikan syariat yang berbeda-beda untuk tiap-tiap umat?","o":["Agar umat saling bermusuhan","Agar manusia bingung memilih agama","Agar kitab suci mudah diubah","Untuk menguji sejauh mana mereka dapat mengimplementasikan syariat-Nya yang tertuang dalam kitab samawi masing-masing","Agar syariat lama tetap dipertahankan selamanya"],"a":3,"p":"Bab 1, Bagian Isi dan Kandungan Ayat."},{"q":"Dalam hadis riwayat Muslim, fitnah diibaratkan seperti...","o":["Angin yang berhembus pelan","Air yang mengalir tenang","Cahaya matahari di siang hari","Hujan yang menyegarkan","Malam yang gelap gulita"],"a":4,"p":"Bab 1, Bagian Terjemah Hadis."},{"q":"Salah satu syarat berkompetisi dalam kebaikan agar diterima oleh Allah Swt. adalah...","o":["Memiliki niat yang ikhlas karena Allah Swt.","Melakukan dengan cara-cara yang curang","Bertujuan untuk mengalahkan lawan secara fisik","Mencari keuntungan duniawi semata","Mengikuti hawa nafsu"],"a":0,"p":"Bab 1, Bagian Manfaat Membiasakan Diri Berkompetisi dalam Kebaikan."},{"q":"Apa yang akan diberitahukan Allah Swt. kepada hamba-Nya ketika mereka kembali kepada-Nya di akhirat kelak?","o":["Jumlah harta yang mereka kumpulkan","Apa saja yang dahulu pernah mereka perselisihkan saat menjalani kehidupan di dunia","Nama-nama pesaing mereka di dunia","Rahasia yang mereka simpan dari sesama manusia","Cara-cara untuk kembali ke dunia"],"a":1,"p":"Bab 1, Bagian Penjelasan Ayat & Isi Kandungan."},{"q":"Dalam konteks Q.S. Al-Ma'idah/5: 48, apa fungsi Al-Qur'an terhadap kitab-kitab yang diturunkan sebelumnya?","o":["Menghapus dan memusnahkan fisiknya","Sebagai pembenar dan penjaga (acuan kebenaran) terhadapnya","Sebagai kitab yang isinya bertentangan total","Sebagai kitab yang hanya berlaku untuk bangsa Arab","Sebagai kitab yang sulit dipahami"],"a":2,"p":"Bab 1, Bagian Terjemah Ayat & Penjelasan Ayat."},{"q":"Jika seseorang beramal saleh dengan niat agar dipuji oleh orang lain, maka ia telah melanggar prinsip...","o":["Amar makruf nahi munkar","Istikamah dalam mengerjakan kebaikan dan niat karena Allah Swt.","Menggunakan akal sehat","Berlomba-lomba dalam kebaikan","Toleransi antarumat beragama"],"a":3,"p":"Bab 1, Bagian Perilaku yang Mencerminkan Kandungan."},{"q":"Berdasarkan makna kosakata, mengapa seseorang yang bertahan pada syariat lama padahal keadaan sudah berubah akan tersesat?","o":["Karena syariat lama lebih unggul","Karena perubahan dilarang dalam agama","Karena semua syariat sama saja","Karena manusia tidak memerlukan tuntunan","Karena setiap terjadi perubahan kondisi, Allah Swt. akan mengubah syariat, dan yang tidak mengikuti minhaj akan tersesat"],"a":4,"p":"Bab 1, Bagian Makna Kosakata."},{"q":"Analisis kasus: Seorang siswa membantu teman yang kesulitan memahami pelajaran tanpa mengharapkan imbalan secara konsisten. Perilaku ini paling tepat mencerminkan poin...","o":["Berlomba-lomba dalam kebaikan merupakan bentuk ungkapan rasa syukur atas limpahan anugerah Allah Swt.","Perintah untuk mengubah syariat sesuai keinginan sendiri","Anjuran untuk berselisih paham demi kebenaran","Kewajiban untuk mengisolasi diri dari lingkungan","Larangan untuk menggunakan akal dalam belajar"],"a":0,"p":"Bab 1, Bagian Isi dan Kandungan Ayat & Perilaku."},{"q":"Dalam Tafsir Al-Azhar, Hamka menyimpulkan bahwa agama yang disampaikan oleh para nabi memiliki satu pokok dan satu tujuan. Apa tujuan tersebut?","o":["Kekuasaan politik","Tauhid","Kekayaan materi","Dominasi budaya","Persatuan suku"],"a":1,"p":"Bab 1, Bagian Penjelasan Ayat."},{"q":"Pernyataan yang sesuai dengan isi dan kandungan Q.S. Al-Ma'idah/5: 48 adalah: (1) Al-Qur'an membenarkan kitab sebelumnya, (2) Syariat setiap umat berbeda sesuai kondisi zamannya, (3) Manusia tidak perlu menggunakan akal, (4) Al-Qur'an tidak akan berubah meskipun satu huruf.","o":["(1), (2), dan (3)","(1), (3), dan (4)","(1), (2), dan (4)","(2), (3), dan (4)","(3) dan (4) saja"],"a":2,"p":"Bab 1, Bagian Isi dan Kandungan Ayat."},{"q":"Seorang dai menekankan bahwa dalam berdakwah harus melalui \"minhaj\" yang jelas sebelum mencapai \"syariat\". Berdasarkan makna kosakata, hal ini mengandung isyarat bahwa...","o":["Minhaj adalah tujuan akhir yang tidak bisa diubah","Syariat tidak memerlukan jalan untuk mencapainya","Minhaj hanya berlaku untuk umat terdahulu","Ada jalan menuju syariat, dan siapa yang mengikuti minhaj akan sampai kepada syariat","Syariat dan minhaj adalah dua konsep yang saling meniadakan"],"a":3,"p":"Bab 1, Bagian Makna Kosakata."},{"q":"Dalam hadis riwayat Muslim, seseorang bisa menjual agamanya dengan barang kenikmatan dunia. Sikap paling tepat untuk menghindari hal tersebut adalah...","o":["Menghindari semua bentuk harta benda","Menarik diri dari kehidupan bermasyarakat","Menunda amal saleh hingga usia senja","Mengikuti semua keinginan hawa nafsu","Selalu waspada terhadap fitnah dan memanfaatkan waktu untuk berzikir serta menjaga keimanan"],"a":4,"p":"Bab 1, Bagian Sikap dan Perilaku yang Mencerminkan Kandungan Hadis."},{"q":"Mengapa Q.S. Al-Ma'idah/5: 48 menekankan untuk \"memutuskan perkara mereka menurut aturan yang diturunkan Allah\"?","o":["Karena aturan Allah adalah kebenaran mutlak yang mencegah penyimpangan dan pengubahan oleh orang yang mencari keuntungan diri","Karena manusia tidak memiliki kemampuan berpikir sama sekali","Karena aturan Allah selalu sama dengan aturan buatan manusia","Karena keputusan manusia selalu lebih adil daripada keputusan Allah","Karena aturan Allah hanya berlaku untuk urusan ibadah mahdah saja"],"a":0,"p":"Bab 1, Bagian Penjelasan Ayat."},{"q":"Analisis kasus: Dua kelompok berselisih mengenai detail ibadah sunah dan saling memaksakan kehendak dengan keras. Berdasarkan Q.S. Al-Ma'idah/5: 48, sikap yang seharusnya diambil adalah...","o":["Saling menjatuhkan untuk membuktikan kebenaran","Berlomba-lomba dalam berbuat kebaikan dan menyadari bahwa hanya Allah yang akan menjelaskan apa yang mereka perselisihkan di akhirat","Meninggalkan ibadah sama sekali agar tidak berselisih","Mengubah isi Al-Qur'an agar sesuai dengan kelompoknya","Mengikuti hawa nafsu kelompok masing-masing"],"a":1,"p":"Bab 1, Bagian Penjelasan Ayat & Isi Kandungan."},{"q":"Dalam konteks \"fastabiqul khairat\", apa yang dimaksud dengan \"amal saleh\" yang tidak merusak?","o":["Amal yang hanya menguntungkan satu pihak","Amal yang dilakukan dengan terpaksa","Perbuatan yang mendatangkan maslahat bagi diri sendiri dan orang lain tanpa menimbulkan kerusakan","Perbuatan yang melanggar aturan negara","Perbuatan yang mengutamakan kepentingan golongan"],"a":2,"p":"Bab 1, Bagian Manfaat Membiasakan Diri Berkompetisi dalam Kebaikan."},{"q":"Perhatikan hukum tajwid berikut: \"Mad Tabi'i bertemu dengan huruf mati karena waqaf\". Hukum bacaan ini disebut...","o":["Mad Jaiz Munfasil","Mad Wajib Muttasil","Ikhfa' Syafawi","Mad 'Arid Lissukun","Izhar Qamariyyah"],"a":3,"p":"Bab 1, Bagian Kajian Ilmu Tajwid."},{"q":"Apa hubungan antara \"berlomba-lomba dalam kebaikan\" dengan \"rasa syukur\" menurut penjelasan tafsir dalam materi?","o":["Tidak ada hubungan sama sekali","Berlomba-lomba dalam kebaikan adalah bentuk kompetisi duniawi","Rasa syukur hanya diucapkan dengan lisan tanpa perbuatan","Berlomba-lomba dalam kebaikan adalah kewajiban yang memberatkan, bukan syukur","Berlomba-lomba berbuat kebajikan merupakan salah satu bentuk ungkapan rasa syukur kepada Allah Swt. atas semua rahmat yang telah dianugerahkan"],"a":4,"p":"Bab 1, Bagian Penjelasan Ayat."},{"q":"Jika seseorang berargumen bahwa syariat Islam sudah tidak relevan dengan zaman modern, maka berdasarkan materi, argumen tersebut keliru karena...","o":["Syariat bisa mengalami perubahan sesuai kondisi, tetapi dasar dan landasan agama (tauhid/keimanan) tidak berubah, dan Al-Qur'an sebagai penjaga kebenaran tetap berlaku","Syariat Islam tidak pernah mengalami perubahan sejak zaman Nabi Adam","Zaman modern tidak memerlukan aturan agama","Semua syariat umat terdahulu harus dihidupkan kembali","Akal manusia lebih tinggi daripada wahyu Allah"],"a":0,"p":"Bab 1, Bagian Asbabun Nuzul & Isi Kandungan."},{"q":"Dalam hadis tentang fitnah, disebutkan \"Di pagi hari, seorang laki-laki dalam keadaan mukmin, lalu kafir di sore harinya.\" Ini mengindikasikan bahwa...","o":["Iman seseorang tidak mungkin berubah","Iman manusia bisa mengalami pasang-surut dan sangat rentan terhadap fitnah jika tidak segera beramal saleh","Waktu pagi adalah waktu yang paling buruk untuk beribadah","Sore hari adalah waktu di mana semua orang menjadi kafir","Laki-laki lebih mudah kafir daripada perempuan"],"a":1,"p":"Bab 1, Bagian Isi dan Kandungan Hadis."},{"q":"Manakah kombinasi perilaku yang paling tepat mencerminkan pemahaman Q.S. Al-Ma'idah/5: 48 dan hadis tentang kompetisi kebaikan secara simultan?","o":["Rajin salat tetapi suka bergosip tentang keburukan orang lain","Berlomba mengumpulkan harta untuk pamer, lalu bersedekah sedikit","Mengucapkan basmalah sebelum beraktivitas, istikamah dalam kebaikan, dan memanfaatkan waktu untuk amal saleh sebelum datang fitnah","Menunda amal baik sampai ada waktu luang yang panjang","Mengikuti hawa nafsu dengan alasan kebebasan berekspresi"],"a":2,"p":"Bab 1, Bagian Perilaku yang Mencerminkan & Sikap Perilaku Hadis."},{"q":"Mengapa Allah Swt. tidak menjadikan manusia sebagai satu umat saja, padahal Dia mampu melakukannya?","o":["Karena Allah Swt. tidak memiliki kemampuan tersebut","Karena manusia menolak untuk disatukan","Karena satu umat akan lebih mudah diatur oleh penguasa","Karena Allah Swt. hendak menguji manusia tentang karunia dan nikmat yang telah diberikan-Nya","Karena perbedaan adalah kesalahan yang harus dihilangkan"],"a":3,"p":"Bab 1, Bagian Penjelasan Ayat & Terjemah Ayat."},{"q":"Dalam konteks Q.S. Al-Ma'idah/5: 48, apa yang dimaksud dengan \"kebenaran yang telah datang kepadamu\"?","o":["Kebenaran yang dibuat oleh para filsuf","Kebenaran yang sesuai dengan keinginan mayoritas","Kebenaran yang bisa diubah sesuai kebutuhan","Kebenaran yang hanya bersifat relatif","Kebenaran yang dibawa oleh Al-Qur'an sebagai pembenar kitab-kitab sebelumnya"],"a":4,"p":"Bab 1, Bagian Terjemah Ayat & Penjelasan Ayat."},{"q":"Analisis kasus: Seorang pelajar menegur temannya yang menyontek dengan baik dan tetap membantu temannya belajar setelahnya. Tindakan ini mencerminkan...","o":["Peduli terhadap sekitar dan istikamah dalam kebaikan tanpa meninggalkan kebenaran","Ikut menyontek agar teman merasa senang","Melaporkan teman kepada pihak berwajib tanpa menegur terlebih dahulu","Membiarkan saja karena bukan urusannya","Bersaing untuk mendapatkan nilai tertinggi dengan cara curang"],"a":0,"p":"Bab 1, Bagian Perilaku yang Mencerminkan Kandungan."},{"q":"Apa perbedaan utama antara kompetisi dalam kebaikan (fastabiqul khairat) dengan kompetisi duniawi yang tercela?","o":["Kompetisi kebaikan tidak memerlukan usaha keras","Kompetisi kebaikan dilakukan dengan niat ikhlas, cara yang benar, dan bertujuan mencari rida Allah, sedangkan kompetisi duniawi yang tercela sering kali mengikuti hawa nafsu dan menghalalkan segala cara","Kompetisi kebaikan hanya boleh dilakukan di masjid","Kompetisi duniawi selalu dilarang dalam semua kondisi","Tidak ada perbedaan, keduanya sama saja"],"a":1,"p":"Bab 1, Bagian Manfaat Membiasakan Diri Berkompetisi dalam Kebaikan."},{"q":"Berdasarkan penjelasan Dr. Abdullah bin Muhammad Alu Syaikh, \"fastabiqul khairat\" juga berarti mengikuti syariat yang Allah jadikan sebagai penasakh. Apa maksud \"penasakh\" di sini?","o":["Syariat yang memperkuat syariat lama tanpa perubahan","Syariat yang menghapus atau menggantikan syariat-syariat sebelumnya","Syariat yang hanya berlaku untuk umat Yahudi dan Nasrani","Syariat yang tidak memiliki dasar hukum","Syariat yang bersifat sementara"],"a":2,"p":"Bab 1, Bagian Penjelasan Ayat."},{"q":"Dalam memahami dinamika syariat dan minhaj, pernyataan manakah yang paling tepat menggambarkan konsekuensi logis dari pemahaman tersebut?","o":["Minhaj tidak ada hubungannya dengan syariat","Syariat tidak pernah berubah dalam kondisi apa pun","Din (agama) bisa dibatalkan oleh syariat yang baru","Siapa yang mengikuti minhaj akan sampai kepada syariat, dan yang sampai kepada syariat berarti telah sampai kepada agama","Perubahan kondisi masyarakat tidak mempengaruhi penerapan syariat"],"a":3,"p":"Bab 1, Bagian Makna Kosakata."},{"q":"Kesimpulan akhir dari pembelajaran Q.S. Al-Ma'idah/5: 48 dan hadis tentang kompetisi dalam kebaikan adalah bahwa umat Islam harus...","o":["Mengisolasi diri dari umat lain","Mengubah isi Al-Qur'an agar sesuai dengan tantangan zaman","Mengikuti hawa nafsu dalam mengambil keputusan","Menunda amal saleh hingga usia tua","Senantiasa berlomba-lomba dalam kebaikan, memegang teguh Al-Qur'an sebagai acuan, dan menyadari bahwa semua akan kembali dan dipertanggungjawabkan di hadapan Allah Swt."],"a":4,"p":"Bab 1, Bagian Isi dan Kandungan Ayat & Sikap Perilaku."}]};
 const SOAL_DEFAULT = [{"q":"Teknologi informasi dan komunikasi dapat diartikan sebagai segala kegiatan yang berkaitan dengan pemrosesan, manipulasi, pengolahan, pemindahan, dan penyampaian informasi menggunakan suatu media. Pernyataan ini merujuk pada definisi...","o":["TIK","Hardware","Software","Brainware","Jaringan"],"a":0},{"q":"Aplikasi media komunikasi yang memungkinkan pengguna untuk mengirim pesan, video call, dan melakukan panggilan grup baik di smartphone maupun desktop adalah...","o":["Telegram","WhatsApp","Line","Skype","Google Meet"],"a":1},{"q":"Google Meet merupakan aplikasi video conference yang memiliki keunggulan utama dalam hal kemudahan penggunaan, yaitu...","o":["Memiliki fitur edit video canggih","Hanya bisa diakses melalui smartphone","Cukup membagikan dan join link tautan","Wajib menginstal aplikasi tambahan","Tidak memerlukan koneksi internet"],"a":2},{"q":"Layanan komputer yang dibuat dan dipakai untuk melakukan pencarian data atau liputan yang tersimpan pada layanan www, ftp, atau publikasi milis disebut...","o":["Browser","Email","Search Engine","Mail Merge","OLE"],"a":2},{"q":"Untuk memfilter pencarian di Google agar hanya menampilkan dokumen dengan format PDF, perintah tambahan yang harus diketik di kolom pencarian adalah...","o":["site:pdf","define:pdf","\"pdf\"","keyword:pdf","filetype:pdf"],"a":4},{"q":"Perintah pencarian site:id pada mesin pencari Google berfungsi untuk...","o":["Menampilkan situs web yang berasal dari negara Indonesia","Mencari file dengan ekstensi .id","Mendefinisikan kata kunci bahasa Indonesia","Menghilangkan hasil pencarian dari domain .id","Mengurutkan hasil pencarian berdasarkan wilayah"],"a":0},{"q":"Penggunaan tanda petik dua (\" \") dalam pencarian di Google bertujuan untuk...","o":["Mencari arti dari sebuah kata","Mencari informasi yang lebih spesifik atau frasa yang tepat","Menghapus hasil pencarian yang tidak relevan","Mencari file berdasarkan jenis ekstensi","Membuka situs web dari negara tertentu"],"a":1},{"q":"Fitur Define pada mesin pencari Google digunakan khusus untuk...","o":["Mencari definisi atau arti dari kata-kata yang sedang tren","Mengunduh file definisi dokumen","Memblokir situs yang tidak aman","Menerjemahkan bahasa asing","Mencari situs web resmi pemerintah"],"a":0},{"q":"Fitur Table of Contents pada Microsoft Word digunakan untuk...","o":["Membuat daftar pustaka secara otomatis","Membuat indeks kata secara manual","Membuat daftar isi dari garis besar isi dokumen","Menggabungkan dua dokumen berbeda","Membuat grafik dari data tabel"],"a":2},{"q":"Mail Merge merupakan fitur pada Ms. Word yang digunakan untuk...","o":["Membuat presentasi yang interaktif","Menghitung data numerik secara otomatis","Menghubungkan file Word dengan file PowerPoint","Mengedit gambar yang disisipkan","Membuat tulisan yang banyak dalam format yang sama dengan cepat"],"a":4},{"q":"Langkah pertama untuk melakukan panggilan grup di WhatsApp adalah membuka aplikasi, kemudian mengetuk tab Panggilan dan mengetuk ikon...","o":["Kamera","Telepon (+)","Mikrofon","Kontak","Pengaturan"],"a":1},{"q":"Saat membuat rapat baru di Google Meet melalui laptop, setelah mengklik \"Rapat baru\", akan muncul beberapa opsi. Salah satu opsi tersebut adalah...","o":["Menghapus riwayat rapat","Membuat rapat terjadwal","Mengubah latar belakang virtual","Menginstal plugin tambahan","Menghapus akun Google"],"a":1},{"q":"Dalam Zoom Meeting, setelah menjadwalkan meeting dan mengklik \"Done\", langkah selanjutnya untuk mengundang peserta adalah memilih menu...","o":["Leave","Record","Invite","Chat","Share Screen"],"a":2},{"q":"Salah satu keunggulan Microsoft Bing Search dibandingkan mesin pencari lain yang disebutkan dalam teks adalah...","o":["Memiliki fitur email terintegrasi","Gambar yang ditampilkan lebih banyak dan detail","Merupakan mesin pencari default Firefox","Tidak memerlukan koneksi internet","Hanya bisa mencari dokumen PDF"],"a":1},{"q":"Mesin pencari yang merupakan salah satu mesin pencari default yang digunakan oleh browser Firefox adalah...","o":["Google Search","Microsoft Bing","Yahoo! Search","DuckDuckGo","Baidu"],"a":2},{"q":"Untuk membuat daftar isi otomatis, judul bab utama dalam dokumen Ms. Word harus ditandai dengan style...","o":["Heading 1","Heading 2","Heading 3","Normal","Title"],"a":0},{"q":"Jika format Heading pada dokumen berubah tidak sesuai keinginan, pengguna dapat memperbaikinya dengan cara klik kanan pada Style, lalu memilih...","o":["Update","Modify","Delete","New Style","Reapply"],"a":1},{"q":"Fungsi dari tombol \"Update Table\" pada fitur Table of Contents adalah untuk...","o":["Menghapus seluruh daftar isi","Sinkronisasi antara daftar isi dengan perubahan terbaru dalam dokumen","Mengubah font seluruh dokumen","Menyimpan dokumen dalam format PDF","Menambahkan halaman baru secara otomatis"],"a":2},{"q":"Untuk membuat Mail Merge, dua jenis file yang harus disiapkan adalah...","o":["File Ms. Word dan file Ms. PowerPoint","File Ms. Excel sebagai sumber data dan Ms. Word sebagai naskah utama","File PDF dan file Ms. Word","File gambar dan file Ms. Excel","File Ms. Access dan file Ms. Word"],"a":1},{"q":"Untuk menghubungkan naskah utama Ms. Word dengan data sumber Ms. Excel, menu yang harus diklik adalah...","o":["Home - Paste","Insert - Table","References - Table of Contents","Mailing - Start Mail Merge","View - Macro"],"a":3},{"q":"Setelah memilih sumber data di Mail Merge, untuk memasukkan nama kolom (misalnya nama peserta) ke dalam naskah utama, pengguna harus memilih sub-menu...","o":["Preview Results","Finish & Merge","Insert Merge Field","Highlight Merge Fields","Check for Errors"],"a":2},{"q":"Untuk melihat apakah nama-nama pada sertifikat Mail Merge sudah benar sebelum dicetak, pengguna dapat menggunakan sub-menu...","o":["Edit Recipient List","Preview Results","Find Recipient","AutoCheck","Highlight Merge Fields"],"a":1},{"q":"Object Linking and Embedding (OLE) merupakan fitur pada Ms. Office yang digunakan untuk...","o":["Menghapus objek dari dokumen","Menggabungkan suatu objek yang berasal dari aplikasi lain","Mengunci dokumen dengan password","Mengubah format file Word ke PDF","Membuat makro otomatis"],"a":2},{"q":"Perbedaan mendasar antara Object Linking dan Object Embedding pada OLE adalah...","o":["Linking tidak memerlukan file sumber, Embedding memerlukan","Linking akan memperbarui data jika sumber diubah, Embedding tidak terpengaruh perubahan sumber","Embedding membuat file menjadi lebih kecil, Linking memperbesar file","Linking hanya untuk gambar, Embedding hanya untuk teks","Embedding memerlukan koneksi internet, Linking tidak"],"a":1},{"q":"Langkah melakukan Object Linking dari Excel ke Word adalah menyalin data, lalu di Word memilih Paste Special, kemudian memilih opsi...","o":["Paste","Paste Link","Keep Text Only","Picture","Keep Source Formatting"],"a":1},{"q":"Jika pengguna hanya ingin menempelkan data dari Excel ke Word tanpa ingin data tersebut berubah saat file Excel asli diedit, maka pada Paste Special harus dipilih opsi...","o":["Paste Link","Microsoft Word Document","Paste","HTML Format","Unformatted Text"],"a":2},{"q":"Untuk memasukkan tabel Ms. Excel ke dalam slide Ms. PowerPoint, menu yang harus dipilih adalah...","o":["Home - New Slide","Insert - Table - Excel Spreadsheet","Design - Format Background","Transitions - Effect Options","Slide Show - From Beginning"],"a":1},{"q":"Untuk membuat diagram pada Ms. Word menggunakan data dari Excel, menu yang harus diklik adalah...","o":["Layout - Margins","References - Citations","Insert - Chart","Mailings - Envelopes","Review - Translate"],"a":2},{"q":"Fitur Hyperlink pada Ms. PowerPoint dapat digunakan untuk...","o":["Menghapus slide yang tidak diperlukan","Menghubungkan teks atau objek dengan slide lain atau dokumen/website luar","Mengubah warna latar belakang slide","Menambahkan animasi pada teks","Mengecilkan ukuran file presentasi"],"a":1},{"q":"Sesuai aspek Kesehatan, Keselamatan Kerja, dan Lingkungan (K3L), jarak pandang minimal yang disarankan antara mata dan layar monitor adalah...","o":["10 cm","20 cm","30 cm","40 cm","50 cm"],"a":3},{"q":"Seorang siswa ingin mencari dokumen skripsi format PDF yang hanya berasal dari situs web pendidikan di Indonesia (.ac.id). Kombinasi perintah pencarian Google yang paling tepat adalah...","o":["filetype:pdf site:ac.id","define:pdf site:ac.id","\"skripsi\" filetype:doc","site:pdf filetype:ac.id","keyword:skripsi \"ac.id\""],"a":0},{"q":"Dalam mengerjakan tugas, Andi menemukan istilah teknis \"Cloud Computing\" yang tidak ia pahami. Cara tercepat dan paling tepat untuk mencari arti istilah tersebut di Google adalah...","o":["Mengetik \"Cloud Computing\" tanpa tanda kutip","Menggunakan perintah filetype:Cloud Computing","Menggunakan perintah define:Cloud Computing","Menggunakan perintah site:Cloud Computing","Mencari di menu Table of Contents"],"a":2},{"q":"Saat melakukan Mail Merge untuk membuat 100 sertifikat, kolom di Excel bernama \"NAMA_LENGKAP\". Setelah proses Insert Merge Field, tampilan di naskah utama Ms. Word akan muncul sebagai...","o":["[NAMA_LENGKAP]","{NAMA_LENGKAP}","<<NAMA_LENGKAP>>","(NAMA_LENGKAP)","NAMA_LENGKAP"],"a":2},{"q":"Budi membuat laporan di Word yang berisi tabel data dari Excel menggunakan metode Object Linking. Suatu hari, data di file Excel sumber diubah nilainya. Apa yang terjadi pada tabel di file Word Budi?","o":["Tidak akan berubah sama sekali","Akan berubah secara otomatis mengikuti data sumber","Akan menjadi error dan tidak bisa dibuka","Akan terhapus secara otomatis","Akan berubah menjadi format gambar"],"a":1},{"q":"Sari telah membuat daftar isi menggunakan Table of Contents. Namun, ia baru menyadari bahwa ukuran font pada Heading 1 terlalu kecil. Agar semua Heading 1 di seluruh dokumen berubah ukurannya secara seragam, Sari harus...","o":["Mengubah font satu per satu secara manual","Menghapus daftar isi dan membuatnya ulang dari awal","Menggunakan fitur Modify pada Style Heading 1","Menggunakan fitur Update Table","Mengubah font di menu Page Layout"],"a":2},{"q":"Dalam presentasi PowerPoint, Rina ingin agar saat teks \"Lihat Data Lengkap\" diklik, presentasi akan membuka file Excel yang tersimpan di komputer. Fitur yang harus digunakan Rina adalah...","o":["Insert - Chart","Insert - Hyperlink (pilih Existing File or Web Page)","Insert - Table - Excel Spreadsheet","Transitions - Morph","Slide Show - Rehearse Timings"],"a":1},{"q":"Mengapa penggunaan Mail Merge dianggap lebih efisien dibandingkan mengetik sertifikat satu per satu secara manual?","o":["Karena Mail Merge dapat memperbaiki ejaan secara otomatis","Karena Mail Merge dapat menghasilkan banyak dokumen dengan format sama secara cepat dan praktis","Karena Mail Merge tidak memerlukan file sumber data","Karena Mail Merge dapat menerjemahkan bahasa secara otomatis","Karena Mail Merge dapat mengompresi ukuran file"],"a":1},{"q":"Urutan langkah yang benar untuk membuat daftar isi otomatis di Ms. Word dari awal adalah...","o":["1. Klik Table of Contents, 2. Pilih Heading, 3. Update Table","1. Tandai judul dengan Heading, 2. Klik References - Table of Contents, 3. Pilih format","1. Ketik daftar isi manual, 2. Blok teks, 3. Klik Insert Hyperlink","1. Klik Insert Chart, 2. Masukkan data, 3. Klik OK","1. Buka Mail Merge, 2. Pilih sumber data, 3. Insert Merge Field"],"a":1},{"q":"Sebuah perusahaan ingin menyisipkan logo dan grafik dari Excel ke laporan Word. Grafik tersebut bersifat final dan tidak boleh berubah meskipun file Excel asli dihapus atau dimodifikasi di masa depan. Metode OLE yang paling tepat adalah...","o":["Object Linking","Object Embedding","Mail Merge","Hyperlink","Table of Contents"],"a":1},{"q":"Seorang peneliti ingin mencari frasa tepat \"Dampak Pandemi COVID-19 terhadap Pendidikan SMK\" di Google agar hasil pencarian tidak memecah kata-kata tersebut. Perintah yang harus digunakan adalah...","o":["Dampak Pandemi COVID-19 terhadap Pendidikan SMK","filetype:\"Dampak Pandemi COVID-19 terhadap Pendidikan SMK\"","\"Dampak Pandemi COVID-19 terhadap Pendidikan SMK\"","define:\"Dampak Pandemi COVID-19 terhadap Pendidikan SMK\"","site:\"Dampak Pandemi COVID-19 terhadap Pendidikan SMK\""],"a":2},{"q":"Dalam Zoom Meeting, setelah pengguna mengisi judul rapat, tanggal, dan jam pelaksanaan pada menu Schedule, langkah yang harus dilakukan sebelum mengundang peserta adalah...","o":["Klik tombol Leave","Klik tombol Record","Klik tombol Done","Klik tombol Share Screen","Klik tombol Mute"],"a":2},{"q":"Komunikasi daring terbagi menjadi dua macam, yaitu sinkron dan asinkron. Aplikasi seperti WhatsApp dan Zoom Meeting yang memungkinkan interaksi secara langsung dan serempak termasuk dalam kategori...","o":["Komunikasi asinkron","Komunikasi sinkron","Komunikasi satu arah","Komunikasi offline","Komunikasi analog"],"a":1},{"q":"Untuk menyajikan data angka dari Excel ke dalam bentuk visual grafik yang tertanam di dalam dokumen Ms. Word, langkah yang paling tepat adalah...","o":["Copy-paste biasa tanpa opsi khusus","Menggunakan fitur Mail Merge","Menggunakan menu Insert - Chart","Menggunakan menu References - Table of Contents","Menggunakan menu Review - Comments"],"a":2},{"q":"Seorang siswa ingin mencari berita terkini tentang \"Teknologi Informatika\" hanya dari situs web detik.com. Kombinasi pencarian yang paling efektif adalah...","o":["\"Teknologi Informatika\" site:detik.com","filetype:detik.com \"Teknologi Informatika\"","define:detik.com \"Teknologi Informatika\"","\"Teknologi Informatika\" filetype:html","site:com \"Teknologi Informatika\""],"a":0},{"q":"Berdasarkan aspek K3L (Kesehatan, Keselamatan Kerja, dan Lingkungan), posisi tubuh yang disarankan saat menggunakan komputer dalam waktu lama adalah...","o":["Duduk membungkuk agar lebih dekat ke layar","Lutut membentuk sudut 90Â° dan kaki menapak di lantai","Layar monitor ditempatkan lebih rendah dari posisi dada","Jarak pandang kurang dari 20 cm untuk detail","Menggunakan kursi tanpa sandaran punggung"],"a":1},{"q":"Setelah menambahkan beberapa bab baru di tengah dokumen Ms. Word yang sudah memiliki Table of Contents, nomor halaman dan judul di daftar isi menjadi tidak akurat. Solusi untuk memperbaikinya adalah...","o":["Menghapus daftar isi dan mengetik ulang secara manual","Mengubah font seluruh dokumen","Melakukan klik kanan pada daftar isi, lalu pilih \"Update Table\"","Menyimpan dokumen dengan nama baru","Menggunakan fitur Mail Merge"],"a":2},{"q":"Saat mengintegrasikan Ms. PowerPoint dan Ms. Excel menggunakan fitur \"Insert - Table - Excel Spreadsheet\", apa yang terjadi pada slide PowerPoint?","o":["Muncul worksheet Excel mini yang dapat diedit langsung di dalam slide","File Excel asli akan terhapus dari komputer","PowerPoint akan otomatis membuat grafik 3D","Slide akan berpindah ke mode presenter","Data Excel akan terkunci dan tidak bisa diubah"],"a":0},{"q":"Dalam proses Mail Merge, fungsi dari tombol \"Next Record\" pada tab Mailings adalah untuk...","o":["Menghapus data yang salah di file Excel","Memindahkan tampilan pratinjau ke data penerima berikutnya","Menyimpan dokumen Word menjadi PDF","Menghubungkan ke sumber data yang baru","Mengirim email secara otomatis ke semua penerima"],"a":1},{"q":"Seorang guru ingin menjelaskan arti istilah \"Algoritma\" kepada siswa menggunakan proyektor. Ia membuka browser dan ingin langsung menampilkan definisi resmi dari kata tersebut. Fitur mesin pencari yang paling tepat digunakan adalah...","o":["Filetype","Site","Tanda petik dua","Define","Image Search"],"a":3},{"q":"Sandra, ketua OSIS, harus membuat program kerja, mencari referensi kegiatan pandemi, membuat laporan dengan daftar isi, dan mempresentasikannya. Rangkaian aplikasi TIK yang paling efisien dan terintegrasi untuk menyelesaikan tugas ini adalah...","o":["Hanya menggunakan Notepad dan kalkulator","Menggunakan mesin pencari (Google) untuk referensi, Ms. Word (Table of Contents) untuk laporan, dan Ms. PowerPoint (Hyperlink/Integrasi) untuk presentasi","Mencari referensi di koran fisik, mengetik laporan manual, dan menggambar presentasi di kertas","Menggunakan WhatsApp untuk menulis laporan panjang dan Zoom untuk mencetak dokumen","Menggunakan fitur Mail Merge untuk membuat satu slide presentasi"],"a":1}];
-const JADWAL_UJIAN_DEFAULT = [{"mataPelajaran":"Informatika","kelas":"X TAB 2","tanggal":"2026-11-04","jamMulai":"10:15","jamSelesai":"11:30"},{"mataPelajaran":"Pendidikan Agama Islam","kelas":"X TBSM 1","tanggal":"2026-11-04","jamMulai":"14:10","jamSelesai":"15:15"},{"mataPelajaran":"Produk Kreatif dan Kewirausahaan","kelas":"XI DKV 3","tanggal":"2026-11-03","jamMulai":"12:30","jamSelesai":"14:10"}];
+const JADWAL_UJIAN_DEFAULT = [{"mataPelajaran":"Informatika","kelas":"X TAB 2","tanggal":"2026-11-04","jamMulai":"11:15","jamSelesai":"13:30"},{"mataPelajaran":"Pendidikan Agama Islam","kelas":"X TBSM 1","tanggal":"2026-11-04","jamMulai":"14:10","jamSelesai":"15:15"},{"mataPelajaran":"Produk Kreatif dan Kewirausahaan","kelas":"XI DKV 3","tanggal":"2026-11-03","jamMulai":"12:30","jamSelesai":"14:10"}];
 // __CONFIG_END__
 
 // __RUNTIME_CONFIG_START__
@@ -3725,7 +3767,7 @@ let configTampilPembahasan = typeof TAMPIL_PEMBAHASAN_DEFAULT !== "undefined" ? 
 // __RUNTIME_CONFIG_END__
 
 
-const HTML_VERSION = "5.19";
+const HTML_VERSION = "5.21";
 
 // Modern SVG Icons Dictionary
 const ICONS = {
@@ -3962,24 +4004,35 @@ const AppStorage = {
     return this._initPromise;
   },
   async ensureReady() {
-    if (!this.db && this._initPromise) {
+    if (!this._initPromise) this.init();
+    if (!this.db) {
       await this._initPromise;
     }
+    return !!this.db;
   },
   async setItem(key, val) {
     if (val === null || val === undefined) {
-      await this.removeItem(key);
-      return;
+      return this.removeItem(key);
     }
     const strVal = typeof val === 'string' ? val : JSON.stringify(val);
     try { localStorage.setItem(key, strVal); } catch(e) {}
     try {
       await this.ensureReady();
       if (this.db) {
-        const tx = this.db.transaction('appData', 'readwrite');
-        tx.objectStore('appData').put(strVal, key);
+        return new Promise((resolve) => {
+          try {
+            const tx = this.db.transaction('appData', 'readwrite');
+            tx.oncomplete = () => resolve(true);
+            tx.onerror = () => resolve(false);
+            tx.onabort = () => resolve(false);
+            tx.objectStore('appData').put(strVal, key);
+          } catch(err) {
+            resolve(false);
+          }
+        });
       }
     } catch(e) {}
+    return false;
   },
   async getItem(key) {
     // 1. Synchronous fast-read from localStorage
@@ -3995,10 +4048,14 @@ const AppStorage = {
       await this.ensureReady();
       if (this.db) {
         const strVal = await new Promise((resolve) => {
-          const tx = this.db.transaction('appData', 'readonly');
-          const req = tx.objectStore('appData').get(key);
-          req.onsuccess = () => resolve(req.result);
-          req.onerror = () => resolve(null);
+          try {
+            const tx = this.db.transaction('appData', 'readonly');
+            const req = tx.objectStore('appData').get(key);
+            req.onsuccess = () => resolve(req.result !== undefined ? req.result : null);
+            req.onerror = () => resolve(null);
+          } catch(err) {
+            resolve(null);
+          }
         });
         if (strVal !== undefined && strVal !== null && strVal !== 'null') {
           try { localStorage.setItem(key, strVal); } catch(e) {}
@@ -4013,20 +4070,40 @@ const AppStorage = {
     try {
       await this.ensureReady();
       if (this.db) {
-        const tx = this.db.transaction('appData', 'readwrite');
-        tx.objectStore('appData').delete(key);
+        return new Promise((resolve) => {
+          try {
+            const tx = this.db.transaction('appData', 'readwrite');
+            tx.oncomplete = () => resolve(true);
+            tx.onerror = () => resolve(false);
+            tx.onabort = () => resolve(false);
+            tx.objectStore('appData').delete(key);
+          } catch(err) {
+            resolve(false);
+          }
+        });
       }
     } catch(e) {}
+    return false;
   },
   async clear() {
     try { localStorage.clear(); } catch(e) {}
     try {
       await this.ensureReady();
       if (this.db) {
-        const tx = this.db.transaction('appData', 'readwrite');
-        tx.objectStore('appData').clear();
+        return new Promise((resolve) => {
+          try {
+            const tx = this.db.transaction('appData', 'readwrite');
+            tx.oncomplete = () => resolve(true);
+            tx.onerror = () => resolve(false);
+            tx.onabort = () => resolve(false);
+            tx.objectStore('appData').clear();
+          } catch(err) {
+            resolve(false);
+          }
+        });
       }
     } catch(e) {}
+    return false;
   }
 };
 AppStorage.init();
@@ -4122,7 +4199,8 @@ function generateSubmissionKey(payload) {
   const nomor = String(payload.nomor).trim().toLowerCase();
   const kelas = String(payload.kelas).trim().toLowerCase();
   const mapel = String(payload.mataPelajaran || '').trim().toLowerCase();
-  return `${nama}_${nomor}_${kelas}_${mapel}`;
+  const waktuMulaiKey = payload.waktuMulai ? `_${payload.waktuMulai}` : '';
+  return `${nama}_${nomor}_${kelas}_${mapel}${waktuMulaiKey}`;
 }
 
 function getSentSubmissionKeys() {
@@ -4438,16 +4516,14 @@ let jadwalUjianDb = (typeof JADWAL_UJIAN_DEFAULT !== 'undefined' && Array.isArra
 let isInitialReconciled = false;
 
 function reconcileVersionAndData(force = false) {
-  // CRITICAL SAFETY GUARD: If an exam is currently in progress, NEVER wipe student active session on reload!
+  // CRITICAL SAFETY GUARD: If an exam is in progress or completed, NEVER wipe student active session on reload!
   const currentStatus = localStorage.getItem('statusUjian');
-  if (!force && currentStatus === 'berlangsung') {
-    return false;
-  }
+  const isExamActive = (currentStatus === 'berlangsung' || currentStatus === 'selesai');
 
   const currentFingerprint = hitungFingerprintDataFile();
   const savedFingerprint = localStorage.getItem('cbtFileFingerprint');
   const savedVersion = localStorage.getItem('htmlVersion');
-  const shouldReconcile = force || !savedVersion || savedVersion !== HTML_VERSION || savedFingerprint !== currentFingerprint;
+  const shouldReconcile = force || (!isExamActive && (!savedVersion || savedVersion !== HTML_VERSION || savedFingerprint !== currentFingerprint));
 
   if (shouldReconcile) {
     if (typeof JUDUL_DEFAULT !== 'undefined') configJudul = JUDUL_DEFAULT;
@@ -4584,6 +4660,9 @@ function reconcileVersionAndData(force = false) {
 
     const savedJadwal = localStorage.getItem('jadwalUjianDb');
     if (savedJadwal) { try { jadwalUjianDb = JSON.parse(savedJadwal); } catch(e) {} }
+
+    const savedDataSiswa = localStorage.getItem('dataSiswa');
+    if (savedDataSiswa) { try { dataSiswa = JSON.parse(savedDataSiswa); } catch(e) {} }
 
     return false;
   }
@@ -5322,21 +5401,46 @@ function importExcel(event) {
 
       const soalBaru = [];
       let barisMulai = 0;
+      let qCol = 0, aCol = 1, bCol = 2, cCol = 3, dCol = 4, eCol = 5, keyCol = 6, pembCol = 7;
+
       if (jsonData.length > 0) {
-        const firstCell = String(jsonData[0][0] || '').toLowerCase();
-        if (firstCell.includes('pertanyaan') || firstCell.includes('soal') || firstCell.includes('no')) barisMulai = 1;
+        const headerRow = jsonData[0].map(c => String(c || '').toLowerCase().trim());
+        const hasHeader = headerRow.some(c => c.includes('soal') || c.includes('pertanyaan') || c.includes('opsi') || c.includes('kunci'));
+        if (hasHeader) {
+          barisMulai = 1;
+          const detectedQ = headerRow.findIndex(c => c.includes('soal') || c.includes('pertanyaan'));
+          if (detectedQ !== -1) {
+            qCol = detectedQ;
+            aCol = qCol + 1;
+            bCol = qCol + 2;
+            cCol = qCol + 3;
+            dCol = qCol + 4;
+            eCol = qCol + 5;
+            const detectedKey = headerRow.findIndex(c => c.includes('kunci') || c.includes('jawaban'));
+            if (detectedKey !== -1) keyCol = detectedKey;
+            else keyCol = eCol + 1;
+            const detectedPemb = headerRow.findIndex(c => c.includes('bahas') || c.includes('penjelasan'));
+            if (detectedPemb !== -1) pembCol = detectedPemb;
+            else pembCol = keyCol + 1;
+          }
+        } else {
+          if (jsonData.length > 1 && /^\d+$/.test(String(jsonData[0][0] || '').trim()) && !/^\d+$/.test(String(jsonData[0][1] || '').trim())) {
+            qCol = 1; aCol = 2; bCol = 3; cCol = 4; dCol = 5; eCol = 6; keyCol = 7; pembCol = 8;
+          }
+        }
       }
+
       for (let i = barisMulai; i < jsonData.length; i++) {
         const row = jsonData[i];
-        if (!row || row.length < 7) continue;
-        const pertanyaan = String(row[0] || '').trim();
-        const opsiA = String(row[1] || '').trim();
-        const opsiB = String(row[2] || '').trim();
-        const opsiC = String(row[3] || '').trim();
-        const opsiD = String(row[4] || '').trim();
-        const opsiE = String(row[5] || '').trim();
-        const jawabanBenar = String(row[6] || '').trim().toUpperCase();
-        const pembahasan = (row[7] !== undefined && row[7] !== null) ? String(row[7]).trim() : "";
+        if (!row || row.length <= keyCol) continue;
+        const pertanyaan = String(row[qCol] || '').trim();
+        const opsiA = String(row[aCol] || '').trim();
+        const opsiB = String(row[bCol] || '').trim();
+        const opsiC = String(row[cCol] || '').trim();
+        const opsiD = String(row[dCol] || '').trim();
+        const opsiE = String(row[eCol] || '').trim();
+        const jawabanBenar = String(row[keyCol] || '').trim().toUpperCase();
+        const pembahasan = (row[pembCol] !== undefined && row[pembCol] !== null) ? String(row[pembCol]).trim() : "";
 
         if (!pertanyaan || !opsiA || !opsiB || !opsiC || !opsiD || !opsiE || !jawabanBenar) continue;
         let idxJawaban = -1;
@@ -5668,10 +5772,25 @@ function importSiswaExcel(event) {
       }
 
       let barisMulai = 0;
+      let namaCol = 0, noCol = 1, kelasCol = 2;
+
       if (jsonData.length > 0) {
-        const firstCell = String(jsonData[0][0] || '').toLowerCase();
-        if (firstCell.includes('nama') || firstCell.includes('no') || firstCell.includes('lengkap')) {
+        const headerRow = jsonData[0].map(c => String(c || '').toLowerCase().trim());
+        const hasHeader = headerRow.some(c => c.includes('nama') || c.includes('siswa') || c.includes('absen') || c.includes('nis') || c.includes('kelas'));
+        if (hasHeader) {
           barisMulai = 1;
+          const detectedNama = headerRow.findIndex(c => c.includes('nama') || c.includes('siswa') || c.includes('peserta'));
+          const detectedNo = headerRow.findIndex(c => c.includes('absen') || c.includes('nomor') || c.includes('nis') || c.includes('no.'));
+          const detectedKelas = headerRow.findIndex(c => c.includes('kelas') || c.includes('rombel') || c.includes('tingkat'));
+          if (detectedNama !== -1) namaCol = detectedNama;
+          if (detectedNo !== -1) noCol = detectedNo;
+          if (detectedKelas !== -1) kelasCol = detectedKelas;
+        } else {
+          if (jsonData.length > 1 && /^\d+$/.test(String(jsonData[0][0] || '').trim()) && !/^\d+$/.test(String(jsonData[0][1] || '').trim())) {
+            namaCol = 1;
+            noCol = 2;
+            kelasCol = 3;
+          }
         }
       }
 
@@ -5682,10 +5801,11 @@ function importSiswaExcel(event) {
 
       for (let i = barisMulai; i < jsonData.length; i++) {
         const row = jsonData[i];
-        if (!row || row.length < 3) continue;
-        const nama = String(row[0] || '').trim();
-        const nomor = String(row[1] || '').trim();
-        const kelas = String(row[2] || '').trim();
+        const maxNeededIdx = Math.max(namaCol, noCol, kelasCol);
+        if (!row || row.length <= maxNeededIdx) continue;
+        const nama = String(row[namaCol] || '').trim();
+        const nomor = String(row[noCol] || '').trim();
+        const kelas = String(row[kelasCol] || '').trim();
         if (nama && nomor && kelas) {
           const key = `${nama.toLowerCase()}_${nomor.toLowerCase()}_${kelas.toLowerCase()}`;
           if (!existingKeys.has(key)) {
@@ -6498,6 +6618,8 @@ function mulaiUjian() {
   localStorage.setItem('waktuJawaban', JSON.stringify(waktuJawaban));
   localStorage.setItem('urutanOpsiPerSoal', JSON.stringify(urutanOpsiPerSoal));
   durasi = configDurasi * 60;
+  localStorage.setItem('durasiUjianDetik', durasi);
+  AppStorage.setItem('durasiUjianDetik', durasi);
 
   let pool = [...Array(soalAktif.length).keys()];
   if (configAcak) pool = acakArray(pool);
@@ -6751,10 +6873,9 @@ function mulaiTimer() {
         if (btn) btn.disabled = false;
       });
 
-      // Set status before alert so losing window focus on alert does not trigger cheat violations
-      statusUjian = 'selesai';
+      isSubmittingExam = true;
       alert('Waktu ujian telah berakhir! Lembar jawaban Anda akan otomatis dikumpulkan.');
-      submitUjian(false);
+      submitUjian(true);
       return;
     }
 
@@ -6849,6 +6970,15 @@ function exitFullscreen() {
   } catch(e) {}
 }
 
+function isFullscreenSupported() {
+  return !!(
+    document.fullscreenEnabled ||
+    document.webkitFullscreenEnabled ||
+    document.mozFullScreenEnabled ||
+    document.msFullscreenEnabled
+  );
+}
+
 function isBrowserFullscreen() {
   return !!(
     document.fullscreenElement ||
@@ -6863,14 +6993,29 @@ function isBrowserFullscreen() {
 });
 
 function handleFullscreenChange() {
+  if (isSubmittingExam || statusUjian !== 'berlangsung' || isProctorInterventionActive()) return;
+  if (!isFullscreenSupported()) return;
+
   const isFullscreen = isBrowserFullscreen();
-  if (!isFullscreen && isFullscreenActive && statusUjian === 'berlangsung') {
+  if (isFullscreen) {
+    const overlay = document.getElementById('violationOverlay');
+    const btn = document.getElementById('btnReturnFullscreen');
+    if (btn) btn.style.display = 'none';
+    if (overlay && (!overlay.dataset.temporary || overlay.dataset.temporary === 'true')) {
+      overlay.style.display = 'none';
+    }
+  } else if (isFullscreenActive) {
     catatPelanggaran('Keluar dari mode fullscreen resmi');
-    tampilkanOverlayPelanggaran('Anda keluar dari mode fullscreen resmi!');
-    setTimeout(() => {
-      if (statusUjian === 'berlangsung' && isFullscreenActive) enterFullscreen();
-    }, 2500);
+    tampilkanOverlayPelanggaran('Anda keluar dari mode fullscreen resmi!', true);
   }
+}
+
+function kembaliKeUjianDanFullscreen() {
+  enterFullscreen();
+  const overlay = document.getElementById('violationOverlay');
+  if (overlay) overlay.style.display = 'none';
+  const btn = document.getElementById('btnReturnFullscreen');
+  if (btn) btn.style.display = 'none';
 }
 
 document.addEventListener('contextmenu', e => {
@@ -6915,8 +7060,10 @@ document.addEventListener('keydown', e => {
 
 let lastViolationTimestamp = 0;
 const VIOLATION_DEBOUNCE_MS = 1200;
+let isAppDialogActive = false;
 
 function isProctorInterventionActive() {
+  if (isAppDialogActive || isSubmittingExam) return true;
   const resetModal = document.getElementById('resetModal');
   if (resetModal && (resetModal.classList.contains('active') || resetModal.style.display === 'flex' || resetModal.style.display === 'block')) {
     return true;
@@ -6960,6 +7107,7 @@ function catatPelanggaran(jenis) {
 
   if (jumlahPelanggaran >= maxPelanggaranUjian) {
     setTimeout(() => {
+      isSubmittingExam = true;
       alert(`Batas maksimal ${maxPelanggaranUjian} pelanggaran telah tercapai!\n\nUjian otomatis dikumpulkan oleh sistem.`);
       autoSubmit();
     }, 1200);
@@ -6978,17 +7126,35 @@ function updateTampilanPelanggaran() {
   }
 }
 
-function tampilkanOverlayPelanggaran(pesan) {
+function tampilkanOverlayPelanggaran(pesan, isFullscreenExit = false) {
   const overlay = document.getElementById('violationOverlay');
   if (!overlay) return;
-  document.getElementById('overlayCounter').innerText = jumlahPelanggaran;
-  document.getElementById('overlayCount').innerText = jumlahPelanggaran;
-  document.getElementById('overlayMax').innerText = maxPelanggaranUjian;
-  document.getElementById('overlayMessage').innerText = pesan;
-  overlay.style.display = 'flex';
-  setTimeout(() => {
-    overlay.style.display = 'none';
-  }, 2600);
+  const counter = document.getElementById('overlayCounter');
+  if (counter) counter.innerText = jumlahPelanggaran;
+  const count = document.getElementById('overlayCount');
+  if (count) count.innerText = jumlahPelanggaran;
+  const max = document.getElementById('overlayMax');
+  if (max) max.innerText = maxPelanggaranUjian;
+  const msg = document.getElementById('overlayMessage');
+  if (msg) msg.innerText = pesan;
+
+  const btnReturn = document.getElementById('btnReturnFullscreen');
+  if (isFullscreenExit && isFullscreenSupported()) {
+    if (btnReturn) btnReturn.style.display = 'inline-flex';
+    overlay.dataset.temporary = 'false';
+    overlay.style.display = 'flex';
+  } else {
+    if (btnReturn) btnReturn.style.display = 'none';
+    overlay.dataset.temporary = 'true';
+    overlay.style.display = 'flex';
+    setTimeout(() => {
+      if (!isBrowserFullscreen() && isFullscreenActive && isFullscreenSupported()) {
+        if (btnReturn) btnReturn.style.display = 'inline-flex';
+      } else {
+        overlay.style.display = 'none';
+      }
+    }, 2600);
+  }
 }
 
 function buatWatermark(nama, nomor, kelas) {
@@ -7133,10 +7299,15 @@ function kumpulkan() {
     const m = Math.floor(sisaDetik / 60);
     const s = sisaDetik % 60;
     const waktuSisaStr = m > 0 ? `${m} menit ${s} detik` : `${s} detik`;
+    isAppDialogActive = true;
     alert(`UJIAN BELUM DAPAT DIKUMPULKAN!\n\nDemi memaksimalkan hasil asesmen, Anda diwajibkan memanfaatkan waktu ujian dengan sebaik-baiknya untuk meneliti dan memeriksa kembali jawaban Anda.\n\nSisa waktu tunggu pengumpulan: ${waktuSisaStr} lagi.`);
+    setTimeout(() => { isAppDialogActive = false; }, 400);
     return;
   }
-  if (!confirm('Apakah Anda yakin ingin mengumpulkan seluruh lembar jawaban ujian ini?')) return;
+  isAppDialogActive = true;
+  const yakin = confirm('Apakah Anda yakin ingin mengumpulkan seluruh lembar jawaban ujian ini?');
+  setTimeout(() => { isAppDialogActive = false; }, 400);
+  if (!yakin) return;
   submitUjian(false);
 }
 
@@ -7188,63 +7359,70 @@ async function prosesAntreanSheet() {
   }
 
   isSendingSheet = true;
-  const remainingQueue = [];
-  let successfulSends = 0;
+  try {
+    const remainingQueue = [];
+    let successfulSends = 0;
 
-  for (let i = 0; i < queue.length; i++) {
-    const item = queue[i];
-    const subKey = generateSubmissionKey(item.payload);
+    for (let i = 0; i < queue.length; i++) {
+      const item = queue[i];
+      if (!item || !item.payload) continue;
 
-    if (isSubmissionAlreadySent(item.payload)) {
-      continue;
-    }
+      const subKey = generateSubmissionKey(item.payload);
 
-    const url = item.targetUrl || getTargetSpreadsheetUrl(item.payload ? item.payload.kelas : '');
-    if (!url) {
-      remainingQueue.push(item);
-      continue;
-    }
-    const success = await kirimKeGoogleSheetDirect(item.payload, url);
-    if (success) {
-      successfulSends++;
-      if (subKey && item.payload && item.payload.nama !== 'Uji Coba Sistem') {
-        catatSentSubmissionKey(subKey);
+      if (isSubmissionAlreadySent(item.payload)) {
+        continue;
       }
+
+      const url = item.targetUrl || getTargetSpreadsheetUrl(item.payload ? item.payload.kelas : '');
+      if (!url || typeof url !== 'string' || !url.startsWith('http')) {
+        remainingQueue.push(item);
+        continue;
+      }
+      const success = await kirimKeGoogleSheetDirect(item.payload, url);
+      if (success) {
+        successfulSends++;
+        if (subKey && item.payload && item.payload.nama !== 'Uji Coba Sistem') {
+          catatSentSubmissionKey(subKey);
+        }
+        const currentHasil = JSON.parse(localStorage.getItem('hasilUjianTerakhir') || 'null');
+        if (currentHasil && item.payload && currentHasil.nama === item.payload.nama && currentHasil.kelas === item.payload.kelas) {
+          currentHasil.isSent = true;
+          localStorage.setItem('hasilUjianTerakhir', JSON.stringify(currentHasil));
+          AppStorage.setItem('hasilUjianTerakhir', JSON.stringify(currentHasil));
+        }
+      } else {
+        remainingQueue.push(item);
+      }
+    }
+
+    setPendingSyncQueue(remainingQueue);
+    updateNetworkStatusUI();
+
+    if (successfulSends > 0) {
+      showToast('Sync Sukses', `${successfulSends} data berhasil disinkronkan ke Google Spreadsheet`, 'success');
+    }
+
+    if (sheetStatusElem) {
+      if (remainingQueue.length === 0) {
+        sheetStatusElem.innerHTML = `<div class="alert alert-success">${getIcon('check-circle', '', 18)} <div>Semua data nilai berhasil tercatat di Google Spreadsheet.</div></div>`;
+      } else {
+        sheetStatusElem.innerHTML = `<div class="alert alert-warning">${getIcon('alert-triangle', '', 18)} <div>${remainingQueue.length} data tersimpan di antrean offline. Sistem akan mencoba mengirim ulang otomatis.</div></div>`;
+      }
+    }
+
+    if (statusUjian === 'selesai') {
       const currentHasil = JSON.parse(localStorage.getItem('hasilUjianTerakhir') || 'null');
-      if (currentHasil && item.payload && currentHasil.nama === item.payload.nama && currentHasil.kelas === item.payload.kelas) {
-        currentHasil.isSent = true;
-        localStorage.setItem('hasilUjianTerakhir', JSON.stringify(currentHasil));
-        AppStorage.setItem('hasilUjianTerakhir', JSON.stringify(currentHasil));
+      const cloudBadge = document.getElementById('cloudSyncStatusBadge');
+      if (cloudBadge && currentHasil) {
+        const isSent = !!currentHasil.isSent;
+        cloudBadge.className = `badge ${isSent ? 'badge-success' : 'badge-warning'}`;
+        cloudBadge.innerText = `Cloud: ${isSent ? 'Terkirim ke Spreadsheet' : 'Tersimpan di HP (Antrean Offline)'}`;
       }
-    } else {
-      remainingQueue.push(item);
     }
-  }
-
-  setPendingSyncQueue(remainingQueue);
-  isSendingSheet = false;
-  updateNetworkStatusUI();
-
-  if (successfulSends > 0) {
-    showToast('Sync Sukses', `${successfulSends} data berhasil disinkronkan ke Google Spreadsheet`, 'success');
-  }
-
-  if (sheetStatusElem) {
-    if (remainingQueue.length === 0) {
-      sheetStatusElem.innerHTML = `<div class="alert alert-success">${getIcon('check-circle', '', 18)} <div>Semua data nilai berhasil tercatat di Google Spreadsheet.</div></div>`;
-    } else {
-      sheetStatusElem.innerHTML = `<div class="alert alert-warning">${getIcon('alert-triangle', '', 18)} <div>${remainingQueue.length} data tersimpan di antrean offline. Sistem akan mencoba mengirim ulang otomatis.</div></div>`;
-    }
-  }
-
-  if (statusUjian === 'selesai') {
-    const currentHasil = JSON.parse(localStorage.getItem('hasilUjianTerakhir') || 'null');
-    const cloudBadge = document.getElementById('cloudSyncStatusBadge');
-    if (cloudBadge && currentHasil) {
-      const isSent = !!currentHasil.isSent;
-      cloudBadge.className = `badge ${isSent ? 'badge-success' : 'badge-warning'}`;
-      cloudBadge.innerText = `Cloud: ${isSent ? 'Terkirim ke Spreadsheet' : 'Tersimpan di HP (Antrean Offline)'}`;
-    }
+  } catch(err) {
+    console.error('Error proses antrean spreadsheet:', err);
+  } finally {
+    isSendingSheet = false;
   }
 }
 
@@ -7298,13 +7476,13 @@ async function kirimKeGoogleSheet(payload, customUrl) {
 }
 
 function submitUjian(isAutoSubmit) {
-  if (isSubmittingExam || statusUjian === 'selesai') return;
+  if (statusUjian === 'selesai') return;
   isSubmittingExam = true;
 
   stopTimer();
   let benar = 0;
   soalUrutan.forEach(soalIdx => {
-    if (jawaban[soalIdx] == soalAktif[soalIdx].a) benar++;
+    if (soalAktif[soalIdx] && jawaban[soalIdx] == soalAktif[soalIdx].a) benar++;
   });
 
   const totalSoalCount = soalUrutan.length || 1;
@@ -7347,7 +7525,8 @@ function submitUjian(isAutoSubmit) {
       totalSoal: soalUrutan.length,
       pelanggaran: jumlahPelanggaran,
       autoSubmit: isAutoSubmit,
-      waktuSelesai: waktuSelesaiStr
+      waktuSelesai: waktuSelesaiStr,
+      waktuMulai: waktuMulai
     };
     kirimKeGoogleSheet(payload, targetUrl);
   }
@@ -7565,7 +7744,7 @@ async function konfirmasiReset() {
   if (hash === PASSWORD_GURU) {
     if (confirm('Apakah Anda yakin ingin mereset seluruh sesi ujian siswa ini?')) {
       stopTimer();
-      const keys = ['statusUjian','waktuMulai','jawaban','raguRaguMap','dataSiswa','pelanggaran','jumlahPelanggaran','nilai','benar','autoSubmit','waktuSelesai','soalUrutan','urutanOpsiPerSoal','waktuJawaban','pendingSheetPayload','pendingSyncQueue','draftIdentitasSiswa','hasilUjianTerakhir','sentSubmissionKeys'];
+      const keys = ['statusUjian','waktuMulai','durasiUjianDetik','jawaban','raguRaguMap','dataSiswa','pelanggaran','jumlahPelanggaran','nilai','benar','autoSubmit','waktuSelesai','soalUrutan','urutanOpsiPerSoal','waktuJawaban','pendingSheetPayload','pendingSyncQueue','draftIdentitasSiswa','hasilUjianTerakhir','sentSubmissionKeys'];
       keys.forEach(k => {
         localStorage.removeItem(k);
         AppStorage.removeItem(k);
@@ -7584,7 +7763,7 @@ async function konfirmasiReset() {
 function resetDataSiswa() {
   if (!confirm('Yakin ingin menghapus semua data sesi siswa di perangkat ini?')) return;
   stopTimer();
-  const keys = ['statusUjian','waktuMulai','jawaban','raguRaguMap','dataSiswa','pelanggaran','jumlahPelanggaran','nilai','benar','autoSubmit','waktuSelesai','soalUrutan','urutanOpsiPerSoal','waktuJawaban','pendingSheetPayload','pendingSyncQueue','draftIdentitasSiswa','hasilUjianTerakhir','sentSubmissionKeys'];
+  const keys = ['statusUjian','waktuMulai','durasiUjianDetik','jawaban','raguRaguMap','dataSiswa','pelanggaran','jumlahPelanggaran','nilai','benar','autoSubmit','waktuSelesai','soalUrutan','urutanOpsiPerSoal','waktuJawaban','pendingSheetPayload','pendingSyncQueue','draftIdentitasSiswa','hasilUjianTerakhir','sentSubmissionKeys'];
   keys.forEach(k => {
     localStorage.removeItem(k);
     AppStorage.removeItem(k);
@@ -7595,7 +7774,7 @@ function resetDataSiswa() {
 function hapusDataTerEmbed() {
   if (!confirm('Bersihkan seluruh cache pengujian siswa? File akan bersih seperti baru.')) return;
   stopTimer();
-  const keys = ['statusUjian','waktuMulai','jawaban','raguRaguMap','dataSiswa','pelanggaran','jumlahPelanggaran','nilai','benar','autoSubmit','waktuSelesai','soalUrutan','urutanOpsiPerSoal','waktuJawaban','pendingSheetPayload','pendingSyncQueue','draftIdentitasSiswa','hasilUjianTerakhir','sentSubmissionKeys'];
+  const keys = ['statusUjian','waktuMulai','durasiUjianDetik','jawaban','raguRaguMap','dataSiswa','pelanggaran','jumlahPelanggaran','nilai','benar','autoSubmit','waktuSelesai','soalUrutan','urutanOpsiPerSoal','waktuJawaban','pendingSheetPayload','pendingSyncQueue','draftIdentitasSiswa','hasilUjianTerakhir','sentSubmissionKeys'];
   keys.forEach(k => {
     localStorage.removeItem(k);
     AppStorage.removeItem(k);
@@ -8256,14 +8435,14 @@ function eksekusiRestore(mode = 'overwrite') {
       if (srcCfg.configJudul !== undefined && srcCfg.configJudul) configJudul = srcCfg.configJudul;
       if (srcCfg.configSubJudul !== undefined) configSubJudul = srcCfg.configSubJudul;
       if (srcCfg.configToken !== undefined && srcCfg.configToken) configToken = srcCfg.configToken;
-      if (srcCfg.configDurasi !== undefined) configDurasi = parseInt(srcCfg.configDurasi);
-      if (srcCfg.configMinWaktu !== undefined) configMinWaktu = parseInt(srcCfg.configMinWaktu);
-      if (srcCfg.configJumlahSoal !== undefined) configJumlahSoal = parseInt(srcCfg.configJumlahSoal);
+      if (srcCfg.configDurasi !== undefined && !isNaN(parseInt(srcCfg.configDurasi))) configDurasi = parseInt(srcCfg.configDurasi);
+      if (srcCfg.configMinWaktu !== undefined && !isNaN(parseInt(srcCfg.configMinWaktu))) configMinWaktu = parseInt(srcCfg.configMinWaktu);
+      if (srcCfg.configJumlahSoal !== undefined && !isNaN(parseInt(srcCfg.configJumlahSoal))) configJumlahSoal = parseInt(srcCfg.configJumlahSoal);
       if (srcCfg.configAcak !== undefined) configAcak = (srcCfg.configAcak === true || srcCfg.configAcak === 'true');
       if (srcCfg.configAcakOpsi !== undefined) configAcakOpsi = (srcCfg.configAcakOpsi === true || srcCfg.configAcakOpsi === 'true');
-      if (srcCfg.configMaxPelanggaran !== undefined) configMaxPelanggaran = parseInt(srcCfg.configMaxPelanggaran);
-      if (srcCfg.configNilaiMaksimal !== undefined) configNilaiMaksimal = parseInt(srcCfg.configNilaiMaksimal);
-      if (srcCfg.configNilaiKKM !== undefined) configNilaiKKM = parseInt(srcCfg.configNilaiKKM);
+      if (srcCfg.configMaxPelanggaran !== undefined && !isNaN(parseInt(srcCfg.configMaxPelanggaran))) configMaxPelanggaran = parseInt(srcCfg.configMaxPelanggaran);
+      if (srcCfg.configNilaiMaksimal !== undefined && !isNaN(parseInt(srcCfg.configNilaiMaksimal))) configNilaiMaksimal = parseInt(srcCfg.configNilaiMaksimal);
+      if (srcCfg.configNilaiKKM !== undefined && !isNaN(parseInt(srcCfg.configNilaiKKM))) configNilaiKKM = parseInt(srcCfg.configNilaiKKM);
       if (srcCfg.configTampilNilai !== undefined) configTampilNilai = (srcCfg.configTampilNilai === true || srcCfg.configTampilNilai === 'true');
       if (srcCfg.configStatusReset !== undefined) configStatusReset = (srcCfg.configStatusReset === true || srcCfg.configStatusReset === 'true');
       if (srcCfg.configTampilJawaban !== undefined) configTampilJawaban = (srcCfg.configTampilJawaban === true || srcCfg.configTampilJawaban === 'true');
@@ -8448,7 +8627,11 @@ window.onload = function() {
   }
 
   if (statusUjian === 'berlangsung') {
+    if (!dataSiswa) {
+      try { dataSiswa = JSON.parse(localStorage.getItem('dataSiswa') || 'null'); } catch(e) {}
+    }
     waktuMulai = parseInt(localStorage.getItem('waktuMulai'));
+    durasi = parseInt(localStorage.getItem('durasiUjianDetik')) || (configDurasi * 60);
     jumlahPelanggaran = parseInt(localStorage.getItem('jumlahPelanggaran') || '0');
     pelanggaran = JSON.parse(localStorage.getItem('pelanggaran') || '[]');
     jawaban = JSON.parse(localStorage.getItem('jawaban') || '{}');
@@ -8456,13 +8639,12 @@ window.onload = function() {
     waktuJawaban = JSON.parse(localStorage.getItem('waktuJawaban') || '{}');
     urutanOpsiPerSoal = JSON.parse(localStorage.getItem('urutanOpsiPerSoal') || '{}');
     soalUrutan = JSON.parse(localStorage.getItem('soalUrutan') || 'null') || [...Array(soalAktif.length).keys()];
-    durasi = configDurasi * 60;
     maxPelanggaranUjian = configMaxPelanggaran;
     isFullscreenActive = true;
 
     document.getElementById('menuAwal').style.display = 'none';
     soalUrutan.forEach(soalIdx => {
-      if (!urutanOpsiPerSoal[soalIdx]) {
+      if (!urutanOpsiPerSoal[soalIdx] && soalAktif[soalIdx]) {
         urutanOpsiPerSoal[soalIdx] = [...Array(soalAktif[soalIdx].o.length).keys()];
       }
     });
@@ -8470,16 +8652,24 @@ window.onload = function() {
     if (dataSiswa) buatWatermark(dataSiswa.nama, dataSiswa.nomor, dataSiswa.kelas);
     inisialisasiCbtUI();
     mulaiTimer();
-    enterFullscreen();
+    if (isFullscreenSupported()) {
+      enterFullscreen();
+    }
 
     const elapsed = Math.floor((Date.now() - waktuMulai) / 1000);
     if (elapsed >= durasi) {
+      stopTimer();
       const timerElem = document.getElementById('timer');
       if (timerElem) timerElem.innerText = '00:00 - SELESAI';
       ['btnKumpul', 'btnKumpulCbt', 'btnKumpulSidebar'].forEach(id => {
         const btn = document.getElementById(id);
         if (btn) btn.disabled = false;
       });
+      isSubmittingExam = true;
+      setTimeout(() => {
+        alert('Waktu ujian telah berakhir! Lembar jawaban Anda otomatis dikumpulkan.');
+        submitUjian(true);
+      }, 400);
     }
   } else if (statusUjian === 'selesai') {
     const nilai = localStorage.getItem('nilai');
